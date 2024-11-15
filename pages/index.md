@@ -18,20 +18,20 @@ hero:
 features:
   - title: Теория вероятностей и математическая статистика
     icon: 🎲
-    link: /probability-theory
+    #link: /probability-theory
   - title: Теория игр
     icon: ♟️
-    link: /game-theory
+    #link: /game-theory
   - title: Физика
     icon: ⚡
-    link: /physics
+    #link: /physics
   - title: Численные методы
     #details: 
     icon: 🔢
     link: /numerical-analysis
   - title: Элементы алгебры и теории чисел
     icon: 🔢
-    link: /number-theory
+    #link: /number-theory
 ---
 
 <script setup>
