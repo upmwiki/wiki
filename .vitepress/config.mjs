@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 import sidebarNumericalAnalysisLectures2024 from '../sidebars/numerical-analysis-lectures-2024.json';
+import sidebarDatabasesLabs2024 from '../sidebars/databases-labs-2024.json';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -10,7 +11,7 @@ export default defineConfig({
 
   markdown: {
     math: true,
-    lineNumbers: true
+    lineNumbers: true,
   },
   lastUpdated: true,
   appearance: 'dark',
@@ -22,7 +23,7 @@ export default defineConfig({
     search: {
       provider: 'local'
     },
-    outline: { label: 'Содержание страницы' },
+    outline: { label: 'Содержание страницы', level: 'deep' },
 
     docFooter: {
       prev: '‹ Назад',
@@ -51,18 +52,12 @@ export default defineConfig({
       '/numerical-analysis/lectures/2024': {
         base: '/numerical-analysis/lectures/2024',
         items: sidebarNumericalAnalysisLectures2024
+      },
+      '/databases/labs/2024': {
+        base: '/databases/labs/2024',
+        items: sidebarDatabasesLabs2024
       }
     },
-
-    /*sidebar: [
-      {
-        text: 'Examples',
-        items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
-        ]
-      }
-    ],*/
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/upmwiki/wiki' }

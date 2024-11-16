@@ -141,3 +141,10 @@
 .MathJax {
   overflow-y: hidden;
 }
+
+.VPSocialLink svg {
+  stroke: var(--vp-c-text-2);
+}
+.VPSocialLink:hover svg {
+  stroke: var(--vp-c-text-1);
+}
