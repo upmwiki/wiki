@@ -4,34 +4,40 @@ layout: home
 markdownStyles: false
 
 hero:
-  name: "УПМ Вики"
+  #name: "УПМ Вики"
   #text: "A VitePress Site"
-  tagline: Конспекты и решебник
+  #tagline: Архив конспектов
   actions:
 #     - theme: alt
 #       text: О направлении
 #       link: /about-fos
-     - theme: alt
-       text: Калькуляторы
-       link: /calculators
+#     - theme: alt
+#       text: Калькуляторы
+#       link: /calculators
 
 features:
+  - title: Базы данных и экспертные системы
+    icon: 🗃️
+    link: /databases
+  - title: Объектно-ориентированное программирование
+    icon: 📦
+    link: /oop
   - title: Теория вероятностей и математическая статистика
     icon: 🎲
-    #link: /probability-theory
+    link: /probability-theory
   - title: Теория игр
     icon: ♟️
-    #link: /game-theory
+    link: /game-theory
   - title: Физика
     icon: ⚡
-    #link: /physics
+    link: /physics
   - title: Численные методы
     #details: 
     icon: 🔢
     link: /numerical-analysis
   - title: Элементы алгебры и теории чисел
     icon: 🔢
-    #link: /number-theory
+    link: /number-theory
 ---
 
 <script setup>

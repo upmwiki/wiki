@@ -1,5 +1,7 @@
 import { defineConfig } from 'vitepress'
 
+import sidebarNumericalAnalysisLectures2024 from '../sidebars/numerical-analysis-lectures-2024.json';
+
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "УПМ Вики",
@@ -11,7 +13,7 @@ export default defineConfig({
     lineNumbers: true
   },
   lastUpdated: true,
-  //appearance: 'force-dark',
+  appearance: 'dark',
   srcDir: 'pages',
   lang: 'ru-RU',
   cleanUrls: true,
@@ -40,9 +42,17 @@ export default defineConfig({
 
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      //{ text: 'Home', link: '/' },
+      //{ text: 'Examples', link: '/markdown-examples' },
+      //{ text: "Калькуляторы", link: "/calculators" },
     ],
+
+    sidebar: {
+      '/numerical-analysis/lectures/2024': {
+        base: '/numerical-analysis/lectures/2024',
+        items: sidebarNumericalAnalysisLectures2024
+      }
+    },
 
     /*sidebar: [
       {
@@ -56,6 +66,13 @@ export default defineConfig({
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/upmwiki/wiki' }
-    ]
+    ],
+
+    head: [
+      ['link', { rel: 'icon', href: '/favicon.ico' }]
+    ],
+
+    logo: { src: '/logo.png', },
+    //siteTitle: false,
   }
 })
