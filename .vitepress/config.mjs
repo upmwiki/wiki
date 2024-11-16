@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 import sidebarNumericalAnalysisLectures2024 from '../sidebars/numerical-analysis-lectures-2024.json';
+import sidebarNumericalAnalysisLabs2024 from '../sidebars/numerical-analysis-labs-2024.json';
 import sidebarDatabasesLabs2024 from '../sidebars/databases-labs-2024.json';
 
 // https://vitepress.dev/reference/site-config
@@ -24,6 +25,11 @@ export default defineConfig({
       provider: 'local'
     },
     outline: { label: 'Содержание страницы', level: 'deep' },
+
+    editLink: {
+      pattern: 'https://github.com/upmwiki/wiki/edit/main/pages/:path',
+      text: 'Редактировать на GitHub'
+    },
 
     docFooter: {
       prev: '‹ Назад',
@@ -53,10 +59,14 @@ export default defineConfig({
         base: '/numerical-analysis/lectures/2024',
         items: sidebarNumericalAnalysisLectures2024
       },
+      '/numerical-analysis/labs/2024': {
+        base: '/numerical-analysis/labs/2024',
+        items: sidebarNumericalAnalysisLabs2024
+      },
       '/databases/labs/2024': {
         base: '/databases/labs/2024',
         items: sidebarDatabasesLabs2024
-      }
+      },
     },
 
     socialLinks: [

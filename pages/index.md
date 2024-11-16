@@ -1,7 +1,7 @@
 ---
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home
-markdownStyles: false
+#markdownStyles: false
 
 hero:
   #name: "УПМ Вики"
@@ -46,5 +46,11 @@ features:
 ---
 
 <script setup>
-  document.title = "УПМ Вики";
+document.title = "УПМ Вики";
 </script>
+
+<!--<script setup>
+import { VPButton } from 'vitepress/theme';
+</script>
+
+<VPButton text="123" />-->

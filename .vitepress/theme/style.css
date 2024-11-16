@@ -161,3 +161,13 @@ input {
 input:is(:hover, :active) {
   border-color: var(--vp-c-brand-1);
 }
+
+.content-body {
+  background-color: color-mix(in srgb, var(--vp-nav-bg-color), transparent 25%) !important;
+  background-color: var(--vp-nav-bg-color) !important;
+  backdrop-filter: blur(5px);
+}
+
+:root {
+  --vp-c-gutter: transparent !important;
+}
