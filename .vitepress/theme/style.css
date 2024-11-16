@@ -148,3 +148,16 @@
 .VPSocialLink:hover svg {
   stroke: var(--vp-c-text-1);
 }
+
+input {
+  display: block;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 100%;
+  transition: border-color 0.25s;
+  font-family: inherit;
+}
+input:is(:hover, :active) {
+  border-color: var(--vp-c-brand-1);
+}

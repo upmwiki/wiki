@@ -5,6 +5,7 @@
     "docs:preview": "vitepress preview"
   },
   "dependencies": {
+    "@primevue/themes": "^4.2.2",
     "markdown-it-mathjax3": "^4.3.2",
     "vitepress": "^1.5.0"
   }
