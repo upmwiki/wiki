@@ -49,6 +49,7 @@ export default defineConfig({
 
     // https://vitepress.dev/reference/default-theme-config
     nav: [
+      { text: '📖 Библиотека', link: '/library' }
       //{ text: 'Home', link: '/' },
       //{ text: 'Examples', link: '/markdown-examples' },
       //{ text: "Калькуляторы", link: "/calculators" },
