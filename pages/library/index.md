@@ -10,6 +10,7 @@ next: false
 
 <script setup>
 import { ref } from 'vue';
+import { withBase } from 'vitepress';
 import { VPButton } from 'vitepress/theme';
 import subjectsListJSON from "../../data/subjects.json";
 import booksListJSON from "../../data/library.json";
@@ -48,7 +49,7 @@ const switchTerm = (term) => { currentTerm.value = term };
 <div class="library-list">
     <div class="book-wrapper" v-for="book of booksList.filter(el => (currentSubject == -1 || el.subjects.includes(currentSubject)) && el.terms.includes(currentTerm))">
         <a :href="book.url" target="_blank">
-            <div class="book-cover"><img :src="'../media/library/' + book.cover" /></div>
+            <div class="book-cover"><img :src="withBase('../public/media/library/') + book.cover" /></div>
             <div class="book-info">
                 <p class="book-title">{{book.title}}</p>
                 <p class="book-authors">{{ book.authors.join(", ") }}</p>
