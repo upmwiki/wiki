@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 import sidebarNumericalAnalysisLectures2024 from '../sidebars/numerical-analysis-lectures-2024.json';
+import sidebarNumberTheoryLectures2024 from '../sidebars/number-theory-lectures-2024.json';
 import sidebarNumericalAnalysisLabs2024 from '../sidebars/numerical-analysis-labs-2024.json';
 import sidebarDatabasesLabs2024 from '../sidebars/databases-labs-2024.json';
 
@@ -56,6 +57,7 @@ export default defineConfig({
     ],
 
     sidebar: {
+      // численные методы
       '/numerical-analysis/lectures/2024': {
         base: '/numerical-analysis/lectures/2024',
         items: sidebarNumericalAnalysisLectures2024
@@ -64,9 +66,15 @@ export default defineConfig({
         base: '/numerical-analysis/labs/2024',
         items: sidebarNumericalAnalysisLabs2024
       },
+      // базы данных и экспертные системы
       '/databases/labs/2024': {
         base: '/databases/labs/2024',
         items: sidebarDatabasesLabs2024
+      },
+      // элементы алгебры и теории чисел
+      '/number-theory/lectures/2024': {
+        base: '/number-theory/lectures/2024',
+        items: sidebarNumberTheoryLectures2024
       },
     },
 

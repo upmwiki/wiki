@@ -55,12 +55,12 @@ features:
     #details: 
     icon: 🧮
     link: /numerical-analysis
-#  - title: Элементы алгебры и теории чисел
-#    icon: 🔢
+  - title: Элементы алгебры и теории чисел
+    icon: 🔢
 #    details: Скоро
-#    #link: /number-theory
-  - icon: ❔
-    details: Скоро
+    link: /number-theory
+#  - icon: ❔
+#    details: Скоро
   - icon: ❔
     details: Скоро
 ---
