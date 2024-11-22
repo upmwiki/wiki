@@ -171,3 +171,12 @@ input:is(:hover, :active) {
 :root {
   --vp-c-gutter: transparent !important;
 }
+
+/* https://github.com/vuejs/vitepress/discussions/3560 */
+html.dark .light-only {
+  display: none !important;
+}
+
+html:not(.dark) .dark-only {
+  display: none !important;
+}

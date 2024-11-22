@@ -43,10 +43,10 @@ features:
 #    icon: 🎲
 #    details: Скоро
 #    #link: /probability-theory
-#  - title: Теория игр и исследование операций
-#    icon: ♟️
-#    details: Скоро
-    #link: /game-theory
+  - title: Теория игр и исследование операций
+    icon: ♟️
+    #details: Скоро
+    link: /game-theory
 #  - title: Физика
 #    icon: ⚡
 #    details: Скоро
@@ -61,8 +61,8 @@ features:
     link: /number-theory
 #  - icon: ❔
 #    details: Скоро
-  - icon: ❔
-    details: Скоро
+#  - icon: ❔
+#    details: Скоро
 ---
 
 <script setup>
