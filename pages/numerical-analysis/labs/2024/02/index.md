@@ -23,6 +23,33 @@ next: false
 
 ## Варианты
 
+| № | $A$ | $B$ |
+|-|-|-|
+|  1 | $\begin{matrix} -1 & 2 & -15 & 4 \\ 3 & 9 & -1 & -4 \\ 11 & -6 & 2 & -2 \\ 7 & 0 & 3 & 12 \end{matrix}$ | $\begin{matrix} -56 \\ -22 \\ 11 \\ 82 \end{matrix}$ |
+|  2 | $\begin{matrix} 4 & 2 & 9 & -1 \\ 6 & 1 & 0 & 4 \\ -5 & 17 & 11 & 0 \\ 7 & 3 & 2 & 4 \end{matrix}$ | $\begin{matrix} 44 \\ 26 \\ 50 \\ 87 \end{matrix}$ |
+|  3 | $\begin{matrix} 9 & -16 & 4 & 1 \\ 2 & 9 & -1 & 14 \\ 13 & -7 & 4 & 1 \\ -8 & 3 & -12 & 0 \end{matrix}$ | $\begin{matrix} 34 \\ 67 \\ 38 \\ -68 \end{matrix}$ |
+|  4 | $\begin{matrix} 6 & 7 & 15 & -1 \\ 6 & 20 & 10 & -2 \\ 13 & 5 & -2 & 4 \\ 1 & 0 & 2 & 4 \end{matrix}$ | $\begin{matrix} 76 \\ 46 \\ 23 \\ 31 \end{matrix}$ |
+|  5 | $\begin{matrix} 5 & 9 & 16 & 1 \\ 18 & -11 & 3 & -2 \\ 7 & -5 & 1 & 15 \\ 6 & -9 & 1 & 1 \end{matrix}$ | $\begin{matrix} 80 \\ 23 \\ 87 \\ 16 \end{matrix}$ |
+|  6 | $\begin{matrix} -14 & 5 & 0 \\ 1 & 10 & 6 \\ 0 & 3 & 9 \end{matrix}$ | $\begin{matrix} -27 \\ 39 \\ 18 \end{matrix}$ |
+|  7 | $\begin{matrix} 2 & 8 & -1 & 13 \\ 7 & 14 & -2 & -1 \\ 8 & 2 & -1 & 3 \\ 4 & -1 & 7 & 1 \end{matrix}$ | $\begin{matrix} 62 \\ -8 \\ 18 \\ 44 \end{matrix}$ |
+|  8 | $\begin{matrix} 8 & 10 & 0 \\ 5 & 1 & -3 \\ 0 & 3 & 9 \end{matrix}$ | $\begin{matrix} 36 \\ 3 \\ 33 \end{matrix}$ |
+|  9 | $\begin{matrix} 3 & 13 & -1 & 2 \\ 2 & 7 & -1 & 11 \\ 5 & 7 & 15 & 1 \\ 6 & 0 & 3 & -1 \end{matrix}$ | $\begin{matrix} 8 \\ 52 \\ 85 \\ 16 \end{matrix}$ |
+| 10 | $\begin{matrix} 0 & 15 & 12 \\ 10 & -3 & 4 \\ 0 & 1 & -3 \end{matrix}$ | $\begin{matrix} -12 \\ 26 \\ 3 \end{matrix}$ |
+| 11 | $\begin{matrix} 1 & 5 & -1 & 2 \\ -12 & 10 & 0 & 1 \\ 2 & 4 & -13 & 2 \\ -3 & 4 & 5 & 17 \end{matrix}$ | $\begin{matrix} 10 \\ -4 \\ -1 \\ 12 \end{matrix}$ |
+| 12 | $\begin{matrix} 5 & -1 & 3 & -12 \\ -1 & 17 & -1 & 7 \\ 0 & 9 & 19 & 7 \\ 17 & 3 & 7 & 2 \end{matrix}$ | $\begin{matrix} 19 \\ 22 \\ 35 \\ 29 \end{matrix}$ |
+| 13 | $\begin{matrix} 3 & 1 & -1 & 15 \\ 13 & 2 & 7 & 2 \\ -1 & 5 & 4 & 3 \\ 1 & -1 & 20 & 7 \end{matrix}$ | $\begin{matrix} 10 \\ -6 \\ 3 \\ 27 \end{matrix}$ |
+| 14 | $\begin{matrix} 5 & 5 & 10 & 11 \\ 1 & 21 & 2 & -2 \\ 7 & 3 & -1 & 20 \\ 21 & -2 & 2 & 3 \end{matrix}$ | $\begin{matrix} 35 \\ 47 \\ 26 \\ 61 \end{matrix}$ |
+| 15 | $\begin{matrix} -17 & 3 & 5 & 1 \\ 2 & -1 & -21 & 5 \\ 7 & 23 & 1 & 3 \\ 1 & 7 & 1 & -11 \end{matrix}$ | $\begin{matrix} -34 \\ -6 \\ -2 \\ -26 \end{matrix}$ |
+| 16 | $\begin{matrix} 1 & 7 & 1 & 5 \\ 5 & 1 & -1 & 1 \\ -1 & 2 & -2 & 19 \\ 1 & 2 & 9 & -11 \end{matrix}$ | $\begin{matrix} 7 \\ 17 \\ 18 \\ -17 \end{matrix}$ |
+| 17 | $\begin{matrix} -2 & 4 & -2 & 15 \\ 3 & 11 & 3 & 1 \\ -2 & -5 & 11 & 3 \\ 10 & 1 & 3 & 0 \end{matrix}$ | $\begin{matrix} 26 \\ -9 \\ -2 \\ 6 \end{matrix}$ |
+| 18 | $\begin{matrix} 15 & 7 & 2 & 1 \\ 2 & -5 & -21 & 7 \\ -3 & 23 & 6 & 2 \\ -2 & 1 & 7 & 20 \end{matrix}$ | $\begin{matrix} 19 \\ 0 \\ -44 \\ 21 \end{matrix}$ |
+| 19 | $\begin{matrix} 9 & -2 & 2 & -5 \\ 1 & 11 & 4 & -1 \\ 1 & 2 & -13 & 3 \\ 2 & 3 & -5 & 17 \end{matrix}$ | $\begin{matrix} -20 \\ -17 \\ -22 \\ 10 \end{matrix}$ |
+| 20 | $\begin{matrix} 11 & 0 & 1 & 3 \\ 1 & 5 & 0 & 19 \\ -1 & -7 & 17 & 1 \\ 4 & 23 & 2 & 4 \end{matrix}$ | $\begin{matrix} 33 \\ 29 \\ 35 \\ 24 \end{matrix}$ |
+
+## Методические указания
+
+* [Теоретический материал по лабораторной работе №2](./theory/)
+
 ## Требования к отчёту
 
 * Постановка задачи: условие и вариант.
@@ -36,3 +63,10 @@ next: false
 Программа должна выводить только одно решение, с наименьшим числом итераций. В текстовом формате нужно привести только информацию о данном решении: значение параметра, векторы решения и невязки.
 
 Также должен создаваться график, на оси абсцисс которого располагается число итераций, а по оси ординат — значения параметров.
+
+
+<style scoped>
+table {
+    overflow-y: hidden;
+}
+</style>
