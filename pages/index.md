@@ -25,7 +25,7 @@ features:
 #    details: Скоро
 #    #link: /computer-science
   - title: Базы данных и экспертные системы
-    icon: 🗃️
+    icon: <img src="/icons/card-file-box.png" width="32" />
     link: /databases
 #  - title: Дифференциальные уравнения
 #    icon: 𝑑𝑥
@@ -44,7 +44,7 @@ features:
 #    details: Скоро
 #    #link: /probability-theory
   - title: Теория игр и исследование операций
-    icon: ♟️
+    icon: <img src="/icons/chess-pawn.png" width="32" />
     #details: Скоро
     link: /game-theory
 #  - title: Физика
@@ -53,10 +53,10 @@ features:
 #    #link: /physics
   - title: Численные методы
     #details: 
-    icon: 🧮
+    icon: <img src="/icons/abacus.png" width="32" />
     link: /numerical-analysis
   - title: Элементы алгебры и теории чисел
-    icon: 🔢
+    icon: <img src="/icons/input-numbers.png" width="32" />
 #    details: Скоро
     link: /number-theory
 #  - icon: ❔
