@@ -4,6 +4,7 @@ import sidebarNumericalAnalysisLectures2024 from '../sidebars/numerical-analysis
 import sidebarNumberTheoryLectures2024 from '../sidebars/number-theory-lectures-2024.json';
 import sidebarNumericalAnalysisLabs2024 from '../sidebars/numerical-analysis-labs-2024.json';
 import sidebarDatabasesLabs2024 from '../sidebars/databases-labs-2024.json';
+import sidebarOOPLabs2024 from '../sidebars/oop-labs-2024.json';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -75,6 +76,11 @@ export default defineConfig({
       '/number-theory/lectures/2024': {
         base: '/number-theory/lectures/2024',
         items: sidebarNumberTheoryLectures2024
+      },
+      // объектно-ориентированное программирование
+      '/oop/2024/labs': {
+        base: '/oop/2024/labs',
+        items: sidebarOOPLabs2024
       },
     },
 
