@@ -1,7 +1,7 @@
 ---
 prev:
     link: ../04
-    text: 3. UML-диаграммы
+    text: 4. UML-диаграммы
 next: false
 #    link: ../05
 #    text: 5. Сериализация
