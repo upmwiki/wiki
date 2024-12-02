@@ -89,7 +89,7 @@ next:
 
 #### 2. Текстовая диаграмма в стиле PlantUML
 
-```plantuml
+```txt
 @startuml
 
 class DeliveryService {
