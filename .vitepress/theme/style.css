@@ -185,3 +185,10 @@ html:not(.dark) .dark-only {
   margin-left: auto;
   margin-right: auto;
 }
+
+p.subtext {
+  color: var(--vp-c-text-2);
+  font-size: .75rem;
+  padding: 0;
+  margin: -.25rem 0 -.25rem 0;
+}
