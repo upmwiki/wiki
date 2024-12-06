@@ -1,5 +1,7 @@
 ---
-prev: false
+prev:
+    link: ../05/
+    text: 5. Цепные дроби
 next: false
 ---
 
