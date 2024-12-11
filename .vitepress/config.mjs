@@ -10,6 +10,7 @@ import sidebarOOPLabs2024 from '../sidebars/oop-labs-2024.json';
 export default defineConfig({
   title: "УПМ Вики",
   //description: "A VitePress Site",
+  description: "",
   titleTemplate: ':title · УПМ Вики',
 
   markdown: {
