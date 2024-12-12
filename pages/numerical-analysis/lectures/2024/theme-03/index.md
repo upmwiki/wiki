@@ -28,7 +28,7 @@ $$
 $$
 \begin{cases}
 x_1 + c_{12}x_2 + \dots + c_{1n}x_n = y_1, \\
-a_{22}^{(1)}x_2 + \dots + a_{2n}^{(1)} = b_2^{(1)}, \\
+a_{22}^{(1)}x_2 + \dots + a_{2n}^{(1)}x_n = b_2^{(1)}, \\
 \dots \\
 a_{n2}^{(1)}x_2 + \dots + a_{nn}^{(1)}x_n = b_n^{(1)},
 \end{cases}
@@ -72,7 +72,7 @@ $$
     x_2 + \dots + c_{2n}x_n = y_2, \\
     \dots \\
     x_{k-1} + c_{k-1,k}x_k + \dots + c_{k-1,n} x_n = y_{k-1},\\
-    a_{kk}^{(k-1)}x_k + \dots + a_{kn}^{(k-1)} = b_k^{(k-1)}, \\
+    a_{kk}^{(k-1)}x_k + \dots + a_{kn}^{(k-1)} x_n = b_k^{(k-1)}, \\
     \dots \\
     a_{nk}^{(k-1)}x_k + \dots + a_{nn}^{(k-1)}x_n = b_n^{(k-1)}.
 \end{cases}
