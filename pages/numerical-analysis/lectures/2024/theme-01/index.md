@@ -113,19 +113,19 @@ $$
   :::
 
 * $y = x_1 \cdot x_2$.
-  * **абсолютная погрешность:** $\Delta_y = |x^*_2| \cdot \Delta_{x_1} + |x^*_1| \cdot |\Delta_{x_2}|$.
+  * **абсолютная погрешность:** $\Delta_y = |x^*_2| \cdot \Delta_{x_1} + |x^*_1| \cdot \Delta_{x_2}$.
   * **относительная погрешность:**
-    $$ \delta_y = { |x^*_2| \cdot \Delta_{x_1} + |x^*_1| \cdot |\Delta_{x_2}| \over |x^*_1 \cdot x^*_2| } = {\Delta_{x_1} \over |x^*_1|} + {\Delta_{x_2} \over |x^*_2|} = \delta_{x_1} + \delta_{x_2}, $$
+    $$ \delta_y = { |x^*_2| \cdot \Delta_{x_1} + |x^*_1| \cdot \Delta_{x_2} \over |x^*_1 \cdot x^*_2| } = {\Delta_{x_1} \over |x^*_1|} + {\Delta_{x_2} \over |x^*_2|} = \delta_{x_1} + \delta_{x_2}, $$
     т. е. при умножении относительные погрешности складываются.
 
 * $y = {x_1 \over x_2}$.
   * **абсолютная погрешность:**
     $$
-    \Delta_y = {1 \over |x^*_2|} \cdot \Delta_{x_1} + \left|{x^*_1 \over (x^*_2)^2}\right| \cdot \Delta_{x_2} = { |x^*_2| \cdot \Delta_{x_1} + |x^*_1| \cdot |\Delta_{x_2}| \over |(x^*_2)^2| }.
+    \Delta_y = {1 \over |x^*_2|} \cdot \Delta_{x_1} + \left|{x^*_1 \over (x^*_2)^2}\right| \cdot \Delta_{x_2} = { |x^*_2| \cdot \Delta_{x_1} + |x^*_1| \cdot \Delta_{x_2} \over |(x^*_2)^2| }.
     $$
   * **относительная погрешность:**
     $$
-    \delta_y = { |x^*_2| \cdot \Delta_{x_1} + |x^*_1| \cdot |\Delta_{x_2}| \over \left|{ x^*_1 \over x^*_2 }\right| \cdot |x^*_2|^2 } = \delta_{x_1} + \delta_{x_2},
+    \delta_y = { |x^*_2| \cdot \Delta_{x_1} + |x^*_1| \cdot \Delta_{x_2} \over \left|{ x^*_1 \over x^*_2 }\right| \cdot |x^*_2|^2 } = \delta_{x_1} + \delta_{x_2},
     $$
     т. е. при делении относительные погрешности складываются.
 
