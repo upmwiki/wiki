@@ -97,7 +97,7 @@ $$
    $$ \implies ||\alpha A|| = |\alpha| \cdot ||A||. $$
 3. перемножение матриц: $C = A \cdot B$.
    $$ C\bar{x} = AB\bar{x}; $$
-   $$ ||C\bar{x}|| = || A\underbrace{B\bar{x}}_{y} || \le ||A|| \cdot ||B\bar{x}|| \le ||A|| \cdot ||B|| \cdot ||\bar{x}|| \implies $$
+   $$ ||C\bar{x}|| = || A\underbrace{B\bar{x}}_\text{вектор} || \le ||A|| \cdot ||B\bar{x}|| \le ||A|| \cdot ||B|| \cdot ||\bar{x}|| \implies $$
    $$ \implies ||AB|| \le ||A|| \cdot ||B||. $$
 
 ::: info ЗАМЕЧАНИЕ
@@ -487,7 +487,7 @@ $$ A^TA\bar{x} = A^T\bar{b} $$
 
 В качестве относительной погрешности решения будем рассматривать величину ${ ||\delta \bar{x}|| \over ||\bar{x}|| }$.
 
-::: info ТЕОРЕМА 1
+:::: info ТЕОРЕМА 1
 Пусть $\delta A = 0$. Тогда для возмущённой задачи
 $$
 A(\bar{x} + \delta \bar{x}) = \bar{b} + \delta \bar{b} \tag{∗}
@@ -496,9 +496,8 @@ $$
 $$
 { ||\delta \bar{x}|| \over ||\bar{x}|| } \le ||A|| \cdot ||A^{-1}|| \cdot { ||\delta \bar{b}|| \over ||\bar{b}|| }.
 $$
-:::
 
-::: details Доказательство теоремы 1
+::: details Доказательство
 Раскроем скобки в системе $(∗)$, учитывая, что $A\bar{x} = \bar{b}$. Получим $A\delta \bar{x} = \delta \bar{b}$, т. е. $\delta \bar{x} = A^{-1} \delta \bar{b}$.
 
 Далее перейдём к нормам:
@@ -517,7 +516,9 @@ $$
 $$
 :::
 
-::: info ТЕОРЕМА 2
+::::
+
+:::: info ТЕОРЕМА 2
 Пусть $\delta \bar{b} = 0$. Тогда для возмущённой системы
 $$ (A + \delta A)(\bar{x} + \delta \bar{x}) = \bar{b} \tag{∗∗} $$
 справедливо неравенство
@@ -526,9 +527,8 @@ $$
 { ||\delta \bar{x}|| \over ||\bar{x} + \delta \bar{x}|| } \le ||A|| \cdot ||A^{-1}|| \cdot { ||\delta A|| \over ||A|| },
 $$
 где первая дробь — это отношение погрешностей решения, а вторая дробь — относительная погрешность исходных данных.
-:::
 
-::: details Доказательство теоремы 2
+::: details Доказательство
 Раскроем скобки в $(∗∗)$, учитывая, что $A\bar{x} = \bar{b}$. Получим
 $$
 A \delta \bar{x} = -\delta A (\bar{x} + \delta \bar{x}).
@@ -549,6 +549,8 @@ $$
 
 Делим и умножаем неравенство на $||A||$, получаем утверждение теоремы. $\blacksquare$
 :::
+
+::::
 
 <br>
 
