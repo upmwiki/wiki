@@ -53,7 +53,7 @@ $$
 
 Вспомним определения скалярного произведения и ортогональности:
 * скалярное произведение: $\left(\bar{q}^{(i)}, \bar{q}^{(j)}\right) = \sum_{k=1}^n q_k^{(i)} \cdot q_k^{(j)}$;
-* ортогональность: $\left(\bar{q}^{(i)}, \bar{q}^{(j)}\right) = 1 ~ ~ ~ \forall i \ne j$.
+* ортогональность: $\left(\bar{q}^{(i)}, \bar{q}^{(j)}\right) = 0 ~ ~ ~ \forall i \ne j$.
 
 Тогда $\left(\bar{q}^{(i)}, \bar{q}^{(j)}\right) = 0$, откуда следует, что
 $$
@@ -63,7 +63,7 @@ $$
 Аналогично можно потребовать, чтобы $\left(\bar{q}^{(3)}, \bar{q}^{(1)}\right) = 0$ и $\left(\bar{q}^{(3)}, \bar{q}^{(2)}\right) = 0$. Отсюда получим
 
 $$
-r_{13} = { \left(\bar{a}^{(a)}, \bar{q}^{(1)}\right) \over \left(\bar{q}^{(1)}, \bar{q}^{(1)}\right) }, ~ ~ ~ ~
+r_{13} = { \left(\bar{a}^{(3)}, \bar{q}^{(1)}\right) \over \left(\bar{q}^{(1)}, \bar{q}^{(1)}\right) }, ~ ~ ~ ~
 r_{23} = { \left(\bar{a}^{(3)}, \bar{q}^{(2)}\right) \over \left(\bar{q}^{(2)}, \bar{q}^{(2)}\right) },
 $$
 и т. д.
