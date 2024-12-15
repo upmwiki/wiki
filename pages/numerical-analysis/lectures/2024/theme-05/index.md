@@ -409,7 +409,7 @@ $$
 Считая $A_0$ и $B_0$ произвольными константами, получим
 
 $$
-y_n = \underbrace{ A_0 y_n^{(1)} + B_0 y_n^{(1)} }_{y_n^\text{oo}} +
+y_n = \underbrace{ A_0 y_n^{(1)} + B_0 y_n^{(2)} }_{y_n^\text{oo}} +
 
 \underbrace{ \sum_{i=1}^n \left[ { -f_i \cdot y_i^{(2)} \over c \cdot \Delta_i } y_n^{(1)} + { f_i y_i^{(1)} \over c \cdot \Delta_i } y_n^{(2)} \right] }_{y_n^\text{чн}}.
 $$
