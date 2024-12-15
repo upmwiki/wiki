@@ -168,12 +168,12 @@ $$
 $$
 где $\beta$ — основание системы (обычно за $\beta$ берут 2, 10 или 16); $0 \le \alpha_i \le \beta - 1$; $i = \overline{1,m}$; $n = [-N,N]$, где $N$ — порядок.
 
-Считаем, что при проведении вычислений мы выходим за данное множество чисел.
+Считаем, что при проведении вычислений мы не выходим за данное множество чисел.
 
 Сформулируем правило округления. Пусть $x = \pm (\alpha _ 1 \beta^n + \alpha _ 2 \beta^{n-2} + \dots + \alpha _ m \beta^{n-m+1} + \alpha _ {m+1}\beta^{n-m} + \dots)$.
 
 1. если $\alpha _ {m+1} \beta^{n-m} + \alpha _ {m+2} \beta ^{n-m+1} + \dots < {1 \over 2} \beta^{n-m+1}$, то $x \coloneqq x^* = \pm (\alpha _ 1 \beta^n + \dots + \alpha _ m \beta^{n-m+1})$;
-2. если $\alpha _ {m+1} \beta^{n-m} + \alpha _ {m+2} \beta^{n-m+1} + \dots > {1 \over 2} \beta^{n-m+1}$, то $x \coloneqq x^* = \pm ( \alpha _ 1 \beta^n + \dots + (\alpha _ m + 1) \cdot \beta^{n0m+1} )$;
+2. если $\alpha _ {m+1} \beta^{n-m} + \alpha _ {m+2} \beta^{n-m+1} + \dots > {1 \over 2} \beta^{n-m+1}$, то $x \coloneqq x^* = \pm ( \alpha _ 1 \beta^n + \dots + (\alpha _ m + 1) \cdot \beta^{n-m+1} )$;
 3. если $\alpha _ {m+1} \beta^{n-m} + \alpha _ {m+2} \beta^{n-m+1} + \dots = {1 \over 2} \beta^{n-m+1}$, то
    $$ x \coloneqq x^* = \begin{cases} \text{п. 1}, & \text{если} ~ \alpha _ m ~ \text{чётное}, \\\\ \text{п. 2}, & \text{если} ~ \alpha _ m ~ \text{нечётное}. \end{cases} $$
 
