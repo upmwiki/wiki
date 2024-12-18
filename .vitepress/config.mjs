@@ -11,7 +11,7 @@ import sidebarGameTheoryLabs2024 from '../sidebars/game-theory-2024-lectures.jso
 export default defineConfig({
   title: "УПМ Вики",
   //description: "A VitePress Site",
-  description: "",
+  description: "УПМ Вики",
   titleTemplate: ':title · УПМ Вики',
 
   markdown: {

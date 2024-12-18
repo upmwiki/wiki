@@ -186,7 +186,8 @@ html:not(.dark) .dark-only {
   margin-right: auto;
 }
 
-p.subtext {
+p.subtext,
+.subtextclass {
   color: var(--vp-c-text-2);
   font-size: .75rem;
   padding: 0;
