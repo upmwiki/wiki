@@ -192,3 +192,20 @@ p.subtext {
   padding: 0;
   margin: -.25rem 0 -.25rem 0;
 }
+
+/*.vp-doc > div > p,
+.vp-doc li {
+  text-align: justify;
+}*/
+
+figcaption {
+  color: var(--vp-c-text-2);
+  font-size: .875rem;
+  text-align: center;
+}
+
+.figures-flex {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
