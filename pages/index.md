@@ -35,6 +35,9 @@ features:
 #    icon: 🔎
 #    details: Скоро
 #    #link: /calculus
+  - title: Комплексный анализ
+    icon: 𝒊
+    link: /complex-analysis
   - title: Объектно-ориентированное программирование
     icon: <img src="/icons/package.png" width="32" />
 #    details: Скоро
