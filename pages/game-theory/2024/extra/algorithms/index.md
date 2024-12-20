@@ -37,6 +37,7 @@ $$
 Поскольку $\underline{v} = \overline{v} = 3$ и координаты совпадают, то данная игра имеет седловую точку в чистых стратегиях. Цена игры равна $v = 3$.
 :::
 
+
 ### Онлайн-калькуляторы
 * https://math.semestr.ru/games/sedlopoint.php
 * https://linprog.com/ru/main-game-theory
@@ -47,5 +48,7 @@ $$
 
 ### Онлайн-калькуляторы
 * https://math.semestr.ru/simplex/simplex.php
-https://programforyou.ru/calculators/simplex-method
+* https://programforyou.ru/calculators/simplex-method
 * https://linprog.com/ru/main-simplex-method
+
+## Вполне смешанные и симметричные игры
