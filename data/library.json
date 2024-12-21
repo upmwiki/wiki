@@ -8,7 +8,7 @@
         "terms": [5]
     },
     {
-        "title": "Задачник-практикум по алгебре и теории чисел",
+        "title": "Задачник-практикум по алгебре и теории чисел. Часть III",
         "authors": ["Кочева А.А."],
         "cover": "Кочева Задачн-практ по алг и теор чис.png",
         "url": "https://drive.google.com/file/d/16Rpu6UtHR5pGDtuCTQFi2epirM6ORt7G/view?usp=sharing",
@@ -21,6 +21,22 @@
         "cover": "002.png",
         "url": "https://drive.google.com/file/d/1oTuyqovC_wMy3vk8D3ZwQF_RYxjaJ160/view?usp=sharing",
         "subjects": [28],
+        "terms": [5]
+    },
+    {
+        "title": "Теория игр. Учебное пособие для университетов",
+        "authors": ["Петросян Л.А.", "Зенкевич Н.А.", "Семина Е.А."],
+        "cover": "004.png",
+        "url": "https://drive.google.com/file/d/1N9xTt84gnKNq4oK5r-Y4mcgGVmkP6V9J/view?usp=sharing",
+        "subjects": [38],
+        "terms": [5]
+    },
+    {
+        "title": "Основы численных методов. Учебник для вузов",
+        "authors": ["Вержбицкий В.М."],
+        "cover": "005.png",
+        "url": "https://drive.google.com/file/d/1Fkr2EaSZOoXtRjCZuw_9PcyxV9_qch3d/view?usp=sharing",
+        "subjects": [29],
         "terms": [5]
     }
 ]
