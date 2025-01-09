@@ -87,7 +87,7 @@ $$
    Умножим неравенство на $\beta$:
    
    $$
-   \beta H(x, y^*) \le H(x^*, y^*) \le H(x^*, y).
+   \beta H(x, y^*) \le \beta H(x^*, y^*) \le \beta H(x^*, y).
    $$
 
    Поскольку $\beta > 0$, то знаки не меняются.
@@ -95,7 +95,7 @@ $$
    Прибавим к неравенству $\alpha$:
 
    $$
-   \beta H(x, y^*) + \alpha \le H(x^*, y^*) + \alpha \le H(x^*, y) + \alpha.
+   \beta H(x, y^*) + \alpha \le \beta H(x^*, y^*) + \alpha \le \beta H(x^*, y) + \alpha.
    $$
 
    По условию получаем, что это неравенство эквивалентно следующему:
@@ -122,7 +122,7 @@ $$
    Умножим неравенство выше на ${1 \over \beta}$:
 
    $$
-   {1 \over \beta} H'(x, y^*) \le {1 \over \beta} H'(x^*, y^*) \le H'(x^*, y).
+   {1 \over \beta} H'(x, y^*) \le {1 \over \beta} H'(x^*, y^*) \le {1 \over \beta} H'(x^*, y).
    $$
 
    Поскольку ${1 \over \beta} > 0$, то знак при умножении не изменится.
@@ -130,7 +130,7 @@ $$
    Вычтем из неравенства ${\alpha \over \beta}$:
 
    $$
-   {1 \over \beta} H'(x, y^*) - {\alpha \over \beta} \le {1 \over \beta} H'(x^*, y^*) - {\alpha \over \beta} \le H'(x^*, y) - {\alpha \over \beta}.
+   {1 \over \beta} H'(x, y^*) - {\alpha \over \beta} \le {1 \over \beta} H'(x^*, y^*) - {\alpha \over \beta} \le {1 \over \beta} H'(x^*, y) - {\alpha \over \beta}.
    $$
 
    Согласно $(∗)$ получаем, что данное неравенство эквивалентно следующему:
