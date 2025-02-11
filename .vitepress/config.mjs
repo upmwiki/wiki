@@ -6,6 +6,7 @@ import sidebarNumericalAnalysisLabs2024 from '../sidebars/numerical-analysis-lab
 import sidebarDatabasesLabs2024 from '../sidebars/databases-labs-2024.json';
 import sidebarOOPLabs2024 from '../sidebars/oop-labs-2024.json';
 import sidebarGameTheoryLabs2024 from '../sidebars/game-theory-2024-lectures.json';
+import optimizationMethodsLectures2025 from '../sidebars/optimization-methods-lectures-2025.json';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -89,6 +90,11 @@ export default defineConfig({
         base: '/game-theory/2024/lectures',
         items: sidebarGameTheoryLabs2024
       },
+      // методы оптимизации
+      '/optimization-methods/2025/lectures': {
+        base: '/optimization-methods/2025/lectures',
+        items: optimizationMethodsLectures2025
+      }
     },
 
     /*socialLinks: [

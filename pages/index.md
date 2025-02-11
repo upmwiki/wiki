@@ -41,13 +41,16 @@ features:
   #- title: Комплексный анализ
     #icon: 𝒊
     #link: /complex-analysis
+  - title: Методы оптимизации
+    icon: <img src="/icons/stopwatch.png" width="32" />
+    link: /optimization-methods
   - title: Объектно-ориентированное программирование
     icon: <img src="/icons/package.png" width="32" />
 #    details: Скоро
     link: /oop
-  - title: Теория вероятностей и математическая статистика
-    icon: 🎲
-    link: /probability-theory
+  #- title: Теория вероятностей и математическая статистика
+  #  icon: 🎲
+  #  link: /probability-theory
   - title: Теория игр и исследование операций
     icon: <img src="/icons/chess-pawn.png" width="32" />
     #details: Скоро
