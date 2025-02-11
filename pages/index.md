@@ -55,6 +55,9 @@ features:
     icon: <img src="/icons/chess-pawn.png" width="32" />
     #details: Скоро
     link: /game-theory
+  - title: Уравнения математической физики
+    icon: <img src="/icons/memo.png" width="32" />
+    link: /matphysics
 #  - title: Физика
 #    icon: ⚡
 #    details: Скоро

@@ -54,7 +54,8 @@ export default defineConfig({
 
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: '<img src="/icons/open-book.png" width="16" style="display: inline;" /> Библиотека', link: '/library' }
+      { text: '<img src="/icons/open-book.png" width="16" style="display: inline; transform: translateY(1px);" /> Библиотека', link: '/library' },
+      { text: '<img src="/icons/bell.png" width="16" title="Список изменений" />', link: '/updates' },
       //{ text: 'Home', link: '/' },
       //{ text: 'Examples', link: '/markdown-examples' },
       //{ text: "Калькуляторы", link: "/calculators" },
