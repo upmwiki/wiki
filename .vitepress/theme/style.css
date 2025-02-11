@@ -210,3 +210,7 @@ figcaption {
   justify-content: space-around;
   flex-wrap: wrap;
 }
+
+.no-header table thead {
+  display: none;
+}

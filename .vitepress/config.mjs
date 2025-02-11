@@ -30,10 +30,10 @@ export default defineConfig({
     },
     outline: { label: 'Содержание страницы', level: 'deep' },
 
-    editLink: {
+    /*editLink: {
       pattern: 'https://github.com/upmwiki/wiki/edit/main/pages/:path',
       text: 'Редактировать на GitHub'
-    },
+    },*/
 
     docFooter: {
       prev: '‹ Назад',
@@ -91,9 +91,9 @@ export default defineConfig({
       },
     },
 
-    socialLinks: [
+    /*socialLinks: [
       { icon: 'github', link: 'https://github.com/upmwiki/wiki' }
-    ],
+    ],*/
 
     head: [
       ['link', { rel: 'icon', href: '/favicon.ico' }]

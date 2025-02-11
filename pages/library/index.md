@@ -17,10 +17,10 @@ import booksListJSON from "../../data/library.json";
 
 const subjectsList = ref(subjectsListJSON);
 
-const termsList = [5, 4, 3, 2, 1];
+const termsList = [6, 5, 4, 3, 2, 1];
 
 const currentSubject = ref(-1);
-const currentTerm = ref(5);
+const currentTerm = ref(6);
 
 const booksList = ref(booksListJSON);
 

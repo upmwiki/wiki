@@ -27,6 +27,9 @@ features:
   - title: Базы данных и экспертные системы
     icon: <img src="/icons/card-file-box.png" width="32" />
     link: /databases
+  - title: Вариационное исчисление и оптимальное управление
+    icon: <img src="/icons/chart-increasing.png" width="32" />
+    link: /variations-calculus
 #  - title: Дифференциальные уравнения
 #    icon: 𝑑𝑥
 #    details: Скоро
@@ -42,10 +45,9 @@ features:
     icon: <img src="/icons/package.png" width="32" />
 #    details: Скоро
     link: /oop
-#  - title: Теория вероятностей и математическая статистика
-#    icon: 🎲
-#    details: Скоро
-#    #link: /probability-theory
+  - title: Теория вероятностей и математическая статистика
+    icon: 🎲
+    link: /probability-theory
   - title: Теория игр и исследование операций
     icon: <img src="/icons/chess-pawn.png" width="32" />
     #details: Скоро
