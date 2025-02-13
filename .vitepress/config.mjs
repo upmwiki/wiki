@@ -108,5 +108,8 @@ export default defineConfig({
 
     logo: { src: '/logo.png', },
     //siteTitle: false,
+  },
+  sitemap: {
+    hostname: "https://upmwiki.netlify.app/"
   }
 })
