@@ -62,6 +62,9 @@ features:
 #    icon: ⚡
 #    details: Скоро
 #    #link: /physics
+  - title: Функциональный анализ
+    icon: <img src="/icons/infinity.png" width="32" />
+    link: /functional-analysis
   - title: Численные методы
     #details: 
     icon: <img src="/icons/abacus.png" width="32" />
