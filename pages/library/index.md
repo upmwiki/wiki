@@ -20,7 +20,7 @@ const subjectsList = ref(subjectsListJSON);
 const termsList = [6, 5, 4, 3, 2, 1];
 
 const currentSubject = ref(-1);
-const currentTerm = ref(6);
+const currentTerm = ref(-1);
 
 const booksList = ref(booksListJSON);
 
@@ -31,13 +31,13 @@ const switchTerm = (term) => { currentTerm.value = term };
 </script>
 
 <div class="categories-list">
-    <VPButton
+    <!--<VPButton
         v-for="term of termsList"
         :theme="currentTerm == term ? 'brand' : 'alt'"
         :text="term + (currentTerm == term ? ' семестр' : '')"
         @click="switchTerm(term)"
     />
-    <div class="v-divider"></div>
+    <div class="v-divider"></div>-->
     <VPButton
         v-for="subject of subjectsList.filter(el => booksList.filter(b => b.subjects.includes(el.id)).length != 0 || el.id == -1)"
         :text="subject.text"
@@ -47,7 +47,7 @@ const switchTerm = (term) => { currentTerm.value = term };
 </div>
 
 <div class="library-list">
-    <div class="book-wrapper" v-for="book of booksList.filter(el => (currentSubject == -1 || el.subjects.includes(currentSubject)) && el.terms.includes(currentTerm))">
+    <div class="book-wrapper" v-for="book of booksList.filter(el => (currentSubject == -1 || el.subjects.includes(currentSubject)) && (currentTerm == -1 || el.terms.includes(currentTerm)))">
         <a :href="book.url" target="_blank">
             <div class="book-cover"><img :src="withBase('/media/library/') + book.cover" /></div>
             <div class="book-info">
@@ -60,7 +60,7 @@ const switchTerm = (term) => { currentTerm.value = term };
         </a>
     </div>
 </div>
-<div v-if="booksList.filter(el => (currentSubject == -1 || el.subjects.includes(currentSubject)) && el.terms.includes(currentTerm)).length == 0">
+<div v-if="booksList.filter(el => (currentSubject == -1 || el.subjects.includes(currentSubject)) && (currentTerm == -1 || el.terms.includes(currentTerm))).length == 0">
 <p class="notfound">Ничего не найдено</p>
 </div>
 

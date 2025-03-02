@@ -11,9 +11,10 @@ import { VPButton } from 'vitepress/theme';
 
 # Самостоятельная работа №1
 
+<a href="/media/files/kp1_PDE1_R.pdf" target="_blank"><VPButton text="Скачать PDF" theme="alt" style="padding: 0 12px; line-height: 2" /></a>
+
 Найти общее решение уравнения с частными производными.
 
-<a href="/media/files/kp1_PDE1_R.pdf" target="_blank"><VPButton text="Скачать PDF" theme="alt" style="padding: 0 12px; line-height: 2; float: right; transform: translateY(3.55rem)" /></a>
 ## Варианты
 
 | № | Уравнение |
