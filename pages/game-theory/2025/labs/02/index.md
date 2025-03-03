@@ -1,7 +1,7 @@
 ---
-prev:
-    text: 1. Решение матричных игр
-    link: ../01
+prev: false
+    #text: 1. Решение матричных игр
+    #link: ../01
 next: false
 ---
 
