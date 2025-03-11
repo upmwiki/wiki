@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 import sidebarNumericalAnalysisLectures2024 from '../sidebars/numerical-analysis-lectures-2024.json';
+import sidebarNumericalAnalysis2024 from '../sidebars/2024-numerical-analysis.json';
 import sidebarNumberTheoryLectures2024 from '../sidebars/number-theory-lectures-2024.json';
 import sidebarNumericalAnalysisLabs2024 from '../sidebars/numerical-analysis-labs-2024.json';
 import sidebarDatabasesLabs2024 from '../sidebars/databases-labs-2024.json';
@@ -66,6 +67,10 @@ export default defineConfig({
       '/numerical-analysis/lectures/2024': {
         base: '/numerical-analysis/lectures/2024',
         items: sidebarNumericalAnalysisLectures2024
+      },
+      '/numerical-analysis/2024': {
+        base: '/numerical-analysis/2024',
+        items: sidebarNumericalAnalysis2024
       },
       '/numerical-analysis/labs/2024': {
         base: '/numerical-analysis/labs/2024',
