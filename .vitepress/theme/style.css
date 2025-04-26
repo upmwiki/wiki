@@ -214,3 +214,7 @@ figcaption {
 .no-header table thead {
   display: none;
 }
+
+.VPHome .container .main .text {
+  max-width: 85%;
+}

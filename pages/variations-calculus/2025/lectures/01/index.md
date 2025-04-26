@@ -9,6 +9,8 @@ next:
 
 # Основные понятия, связанные с экстремальными задачами. Принцип Лагранжа исследования задач с ограничениями
 
+Перевод из языка "народного" в язык математики называется **формализацией**.
+
 ::: info Задача 1
 Найти на данной прямой такую точку, чтобы сумма расстояний от неё до двух заданных точек была минимальна.
 
@@ -245,5 +247,165 @@ $$
 Достаточное условие экстремума:
 
 $$
-\text{d}^2 L \bigg\vert_M
+\left. \text{d}^2 L \right|_M
+= \left. L_{x_1 x_1}'' \right|_M ~ (\text{d}x_1)^2 +
+2 \left. L_{x_1 x_2}'' \right|_M ~ \text{d}x_1 \text{d}x_2 +
+\left. L_{x_2 x_2}'' \right|_M ~ (\text{d}x_2)^2.
+\tag{4}
 $$
+
+Найдём дифференциалы условий:
+
+$$
+\begin{cases}
+\left. \text{d} \varphi_1 \right|_M = \left. (\varphi_1)'_{x_1} \right|_M ~ \text{d}x_1 + \cdots + \left. (\varphi_1)'_{x_n} \right|_M ~ \text{d}x_n = 0, \\
+\left. \text{d} \varphi_2 \right|_M = \left. (\varphi_2)'_{x_1} \right|_M ~ \text{d}x_1 + \cdots + \left. (\varphi_2)'_{x_n} \right|_M ~ \text{d}x_n = 0, \\
+\cdots \\
+\left. \text{d} \varphi_m \right|_M = \left. (\varphi_m)'_{x_1} \right|_M ~ \text{d}x_1 + \cdots + \left. (\varphi_m)'_{x_n} \right|_M ~ \text{d}x_n = 0.
+\end{cases}
+\tag{5}
+$$
+
+Получили СЛАУ.
+
+Пусть ранг системы $(5)$ равен $r$. Это означает, что
+
+$$
+\begin{cases}
+\text{d} x_{n-r+1} = f_1 (\text{d}x_1, \text{d}x_2 ,..., \text{d}x_{n-r}), \\
+\text{d} x_{n-r+2} = f_2 (\text{d}x_1, \text{d}x_2 ,..., \text{d}x_{n-r}), \\
+\cdots \\
+\text{d} x_{n-r} = f_r (\text{d}x_1, \text{d}x_2 ,..., \text{d}x_{n-r}).
+\end{cases}
+\tag{6}
+$$
+
+Подставим равенство $(6)$ в формулу $(4)$:
+
+$$
+\begin{array}{c}
+\left. \text{d}^2 L \right|_M = A_{11} ~ (\text{d}x_1)^2 +
+2A_{12} ~ \text{d}x_1 \text{d}x_2 + \\
++ A_{22} ~ (\text{d}x_2)^2 + \cdots + A_{n-r,n-r} ~ (\text{d}x_{n-r})^2.
+\end{array}
+\tag{7}
+$$
+
+Составим матрицу
+
+$$
+\begin{pmatrix}
+A_{11} & A_{12} & \cdots & A_{1,n-r} \\
+A_{12} & A_{22} & \cdots & A_{2,n-r} \\
+\vdots & \vdots & \ddots & \vdots \\
+A_{1,n-r} & A_{2,n-r} & \cdots & A_{n-r,n-r}
+\end{pmatrix}
+$$
+
+и вычислим угловые определители:
+
+$$
+\Delta_1 = A_{11},
+$$
+
+$$
+\Delta_2 = \begin{vmatrix}
+A_{11} & A_{12} \\
+A_{12} & A_{22}
+\end{vmatrix}; ~ ~ ~ ~
+\Delta_3 = \begin{vmatrix}
+A_{11} & A_{12} & A_{13} \\
+A_{12} & A_{22} & A_{23} \\
+A_{13} & A_{23} & A_{33}
+\end{vmatrix}; ~ ~ ~ ~
+...; ~ ~ ~ ~
+\Delta_{n-r}.
+$$
+
+Если $\Delta_1 > 0$, $\Delta_2 > 0$, ..., $\Delta_{n-r} > 0$, то $M$ $-$ условный минимум.
+
+Если $\Delta_1 < 0$, $\Delta_2 > 0$, $\Delta_3 < 0$, ..., то $M$ $-$ условный максимум.
+
+---
+
+::: info Задача
+Найти кратчайшее расстояние от точки $(1;1;1)$ До плоскости $x + y + z = 0$.
+
+*Решение.*
+
+$$
+\begin{cases}
+d^2 = (x-1)^2 + (y - 1)^2 + (z - 1)^2 \to \min \\
+x + y + z = 0
+\end{cases}
+$$
+
+$$
+L = (x - 1)^2 + (y - 1)^2 + (z - 1)^2 + \lambda(x + y + z)
+$$
+
+Необходимое условие:
+
+$$
+\begin{cases}
+L'_x = 2(x - 1) + \lambda = 0, \\
+L'_y = 2(y - 1) + \lambda = 0, \\
+L'_z = 2(z - 1) + \lambda = 0, \\
+x + y + z = 0.
+\end{cases} \implies
+\begin{cases}
+x = y = z, \\
+\lambda = 2 (1 - x)
+\end{cases} \implies
+$$
+
+$$
+\implies M(0,0,0), ~ ~ \lambda = 2.
+$$
+
+---
+
+$$
+\begin{array}{ccc}
+L''_{xx} = 2 &~& L''_{yy} = 2 \\
+L''_{xy} = 0 &~& L''_{yz} = 0 \\
+L''_{xz} = 0 &~& L''_{zz} = 2
+\end{array}
+$$
+
+$$
+\text{d}^2 L = 2 \left[ (\text{d}x)^2 + (\text{d}y)^2 + (\text{d}z)^2 \right]
+$$
+
+Условие связи:
+
+$$
+\text{d}\varphi = \text{d}x + \text{d}y + \text{d}z = 0 \implies
+$$
+
+$$
+\implies \text{d}z = -\text{d}x - \text{d}y
+$$
+
+$$
+\left. \text{d}^2 L \right|_M = 2 \left[
+    2 ~ (\text{d}x)^2 + 2 ~ \text{d}x\text{d}y + 2 ~ (\text{d}y)^2
+\right] =
+$$
+
+$$
+= 4 ~ (\text{d}x)^2 + 2 \cdot 2 ~ \text{d}x \text{d}y + 4 ~ (\text{d}y)^2.
+$$
+
+$$
+\begin{pmatrix}
+4 & 2 \\ 2 & 4
+\end{pmatrix}
+$$
+
+$\Delta_1 = 4 > 0$, $\Delta_2 = 12 > 0$, следовательно, $M$ $-$ условный минимум.
+
+$$
+d = S_{\min} = \sqrt{1^2 + 1^2 + 1^2} = \sqrt{3}.
+$$
+:::

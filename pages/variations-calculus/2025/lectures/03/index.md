@@ -1,13 +1,17 @@
 ---
 prev:
-    text: 2. Задача с равенствами и неравенствами
-    link: ../02/
-next: false
+   text: 2. Задача с равенствами и неравенствами
+   link: ../02/
+next:
+   text: 4. Простейшая задача вариационного исчисления
+   link: ../04/
 ---
 
 **Лекция 3**
 
 # Нормированные пространства. Дифференцирование в нормированных пространствах
+
+**Функционалом** называется оператор, действующий в $\mathbb{R}$ (т. е. $Y = \mathbb{R}$).
 
 ::: info Определение 1
 Линейное пространство $X$ называется **нормированным**, если на $X$ определён функционал $||\cdot||: X \to \mathbb{R}$, называемый *нормой* и удовлетворяющий условиям:
@@ -49,10 +53,10 @@ $$
    ||x||_r = \max \left( ||x||_0, ||x'||_0, ..., ||x^{(r)}||_0 \right).
    $$
 
-4. **Пространство $\boldsymbol{C_p[a;b]}$ непрерывных функций** с интегральной нормой
+4. **Пространство $\boldsymbol{L_p[a;b]}$** интегрируемых по Лебегу в степени $p$ функции с нормой
 
    $$
-   ||x||_p = \left( \int_a^b \left|x^p(t)\right| ~ \text{d}t \right)^{1/p},
+   ||x||_p = \left( \int_a^b \left|x^p(t)\right| ~ \text{d}\mu \right)^{1/p},
    $$
 
    где $p \ge 1$.
@@ -112,3 +116,176 @@ $$
 ---
 
 <br />
+
+Для дифференцируемой функции можно записать равенство
+
+$$
+f(x + h) - f(x) = f'(x) h + \bar{\bar{o}}(h).
+$$
+
+::: info Определение 3
+Пусть $X$, $Y$ — два нормированных пространства; также задано отображение $\mathcal{F}: X \to Y$.
+
+Назовём $\mathcal{F}$ дифференцируемым в точке $x \in X$, если существует такой линейный оператор $L_x$, что
+
+$$
+\forall \varepsilon > 0 ~ ~ \exists \delta > 0: ~ ~ ( ||h||_X < \delta \implies ||\mathcal{F}(x + h) - \mathcal{F}(x) - L_x h||_Y \le \varepsilon ||h||_X )
+$$
+
+или, если записать более коротко,
+
+$$
+\mathcal{F}(x + h) - \mathcal{F}(x) - L_x h = \bar{\bar{o}}(h).
+$$
+:::
+
+Обозначим тогда $L_x = \mathcal{F}'(x)$.
+
+::: info Пример
+Пусть $\mathcal{F}: L_2[0,1] \to \mathbb{R}$; $\mathcal{F} x(t) = x^2(1)$ (возводит в квадрат и подставляет единицу).
+
+$$
+\mathcal{F}(x + h) = (x(1) + h(1))^2 = x^2(1) + 2x(1)h(1) + h^2(1).
+$$
+
+$$
+\mathcal{F}(x + h) - \mathcal{F}(x) = \underbrace{2x(1)h(1)}_{\mathcal{F}'(x)[h]} + \underbrace{h^2(1)}_{\bar{\bar{o}}(h)}.
+$$
+
+$2 x(1) h(1)$ — линейное, следовательно,
+
+$$
+\mathcal{F}'(x)[h] = 2 x(1) h(1), ~ ~ ~ ~ h^2(1) = \bar{\bar{o}}(h).
+$$
+
+Таким образом, $\mathcal{F}'(x)[h] = 2 x(1) h(1)$.
+:::
+
+Свойства производной отображения:
+
+$$
+\mathcal{F}(x + h) - \mathcal{F}(x) = \mathcal{F}'(x)[h] + \bar{\bar{o}}(h).
+$$
+
+1. $\mathcal{F}'(x)$ определена единственным образом.
+
+   *Доказательство:* предположим, что $L_1$ и $L_2$ являются производными.
+
+   $$
+   \begin{array}{c}
+   \mathcal{F}(x + h) - \mathcal{F}(x) = L_1 + \bar{\bar{o}}(h); \\
+   \mathcal{F}(x + h) - \mathcal{F}(x) = L_2 + \bar{\bar{o}}(h).
+   \end{array}
+   $$
+
+   Тогда
+
+   $$
+   L_1 - L_2 = \bar{\bar{o}}(h) \implies L_1 = L_2. ~ ~ ~ \blacksquare
+   $$
+
+2. Если $\mathcal{F}(x) = \text{const}$, то $\mathcal{F}'(x) = 0$ (нулевой оператор).
+
+3. Производная линейного оператора есть сам же этот оператор: $L'(x) = L$.
+
+   *Доказательство:*
+
+   $$
+   L(x + h) - L(x) = L(x) + L(h) - L(x) = L(h). ~ ~ \blacksquare
+   $$
+
+4. *Производная сложной функции.* Пусть $X, Y, Z$ — три нормированных пространства; $\mathcal{F}: X \to Y$, $G: Y \to Z$; $x_0 \in X$, $y_0 = \mathcal{F}(x_0)$; $H = G\mathcal{F}$. Тогда если существуют $\mathcal{F}'(x_0)$ и $G'(y_0)$, то имеем следующее:
+
+   $$
+   H'(x_0) = G'(y_0) \mathcal{F}'(x_0).
+   $$
+
+   *Доказательство:* Если $\xi$ маленькое, то верно
+
+   $$
+   \mathcal{F}(x_0 + \xi) = \mathcal{F}(x_0) + \mathcal{F}'(x_0) \xi + \bar{\bar{o}}_1 (\xi).
+   $$
+
+   Аналогично
+
+   $$
+   G(y_0 + \eta) = G(y_0) + G'(y_0) \eta + \bar{\bar{o}}_2 (\eta).
+   $$
+
+   Тогда
+
+   $$
+   H(x_0 + \xi) = G\mathcal{F}(x_0 + \xi) =
+   G ( \underbrace{\mathcal{F}(x_0)}_{y_0} + \underbrace{\mathcal{F}'(x_0) \xi + \bar{\bar{o}}_1(\xi)}_{\eta} ) =
+   $$
+
+   $$
+   = G(y_0) + G'(y_0) \left( \left( \mathcal{F}'(x_0) \xi + \bar{\bar{o}}_1(\xi) \right) + \bar{\bar{o}}_2(\eta) \right) =
+   $$
+
+   $$
+   = \underbrace{G(y_0)}_{H(x_0)} +
+   \underbrace{G'(y_0) \mathcal{F}'(x_0)}_{H'(x_0)} \xi + \bar{\bar{o}}(\xi). ~ ~ \blacksquare
+   $$
+
+   Более удобно писать так (в развёрнутой форме):
+
+   $$
+   (G\mathcal{F})'[h] = G'(y_0) \left[ \mathcal{F}'(x_0)[h] \right].
+   $$
+
+::: info Пример
+Найти производную функции $H: x(t) \to x^2(1)$.
+
+*Решение.* Функцию $H$ можно рассмотреть как композицию двух отображений:
+
+* $G(x) = x^2$ (возведение в квадрат);
+* $F(x) = x(1)$ (подстановка единицы).
+
+Тогда
+
+$$
+G(x + h) - G(x) = (x + h)^2 - x^2 = 2xh + h^2 \implies
+$$
+
+$$
+\implies G'(x)[h] = 2xh.
+$$
+
+$$
+F(x + h) - F(x) = x(1) + h(1) - x(1) = h(1) \implies
+$$
+
+$$
+\implies F'(x)[h] = h(1).
+$$
+
+Таким образом,
+
+$$
+H' = \underbrace{2y}_{G'(y_0)} \cdot h(1) = 2 \cdot \underbrace{x(1)}_{y} \cdot h(1).
+$$
+
+Ответы совпали.
+:::
+
+5. Пусть $\mathcal{F}, G: X \to Y$ (два отображения, действующих из $X$ в $Y$). Пусть существуют $\mathcal{F}'(x_0)$, $G'(x_0)$, тогда существуют $(\mathcal{F} + G)'(x_0)$ и $(\alpha \mathcal{F})'(x_0)$, $\alpha \in \mathbb{R}$, и
+
+   $$
+   (\mathcal{F} + G)'(x_0) = \mathcal{F}'(x_0) + G'(x_0);
+   $$
+
+   $$
+   (\alpha \mathcal{F})'(x_0) = \alpha \cdot \mathcal{F}'(x_0).
+   $$
+
+   *Доказательство (только для суммы):*
+
+   $$
+   (\mathcal{F} + G)(x_0 + h) = \mathcal{F}(x_0 + h) + G(x_0 + h) 
+   = \mathcal{F}(x_0) + \mathcal{F}'(x_0) \cdot h + \bar{\bar{o}}(h) + 
+   $$
+
+   $$
+   + G(x_0) + G'(x_0) \cdot h + \bar{\bar{o}}(h) = \mathcal{F}(x_0) + G(x_0) + \underbrace{ \left( \mathcal{F}'(x_0) + G'(x_0) \right) }_{(\mathcal{F} + G)'(x_0)} h + \bar{\bar{o}}(h).
+   $$
