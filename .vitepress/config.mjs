@@ -8,6 +8,7 @@ import sidebarDatabasesLabs2024 from '../sidebars/databases-labs-2024.json';
 import sidebarOOPLabs2024 from '../sidebars/oop-labs-2024.json';
 import sidebarGameTheoryLabs2024 from '../sidebars/game-theory-2024-lectures.json';
 import optimizationMethodsLectures2025 from '../sidebars/optimization-methods-lectures-2025.json';
+import variationsCalculus2025 from '../sidebars/2025-variations-calculus.json';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -100,7 +101,12 @@ export default defineConfig({
       '/optimization-methods/2025': {
         base: '/optimization-methods/2025',
         items: optimizationMethodsLectures2025
-      }
+      },
+      // вариаицонное исчисление и оптимальное управление
+      '/variations-calculus/2025': {
+        base: '/variations-calculus/2025',
+        items: variationsCalculus2025
+      },
     },
 
     /*socialLinks: [
