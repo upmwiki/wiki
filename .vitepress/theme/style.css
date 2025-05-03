@@ -191,7 +191,19 @@ p.subtext,
   color: var(--vp-c-text-2);
   font-size: .75rem;
   padding: 0;
-  margin: -.25rem 0 -.25rem 0;
+  margin: -.15rem 0 -.25rem 0;
+}
+
+p.subtext.red,
+.subtextclass.red {
+  color: var(--vp-c-danger-2);
+  margin-top: -0.55rem;
+  font-style: italic;
+}
+p.subtext.red::before {
+  content: "Не завершено: ";
+  display: inline;
+  font-weight: bold;
 }
 
 /*.vp-doc > div > p,
@@ -216,5 +228,5 @@ figcaption {
 }
 
 .VPHome .container .main .text {
-  max-width: 85%;
+  max-width: 90%;
 }
