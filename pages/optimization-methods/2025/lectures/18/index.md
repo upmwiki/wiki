@@ -1,5 +1,7 @@
 ---
-prev: false
+prev:
+    text: § 17. Задачи транспортного типа
+    link: ../17/
 next: false
 ---
 
