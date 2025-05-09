@@ -33,10 +33,10 @@ export default defineConfig({
     },
     outline: { label: 'Содержание страницы', level: 'deep' },
 
-    /*editLink: {
+    editLink: {
       pattern: 'https://github.com/upmwiki/wiki/edit/main/pages/:path',
       text: 'Редактировать на GitHub'
-    },*/
+    },
 
     docFooter: {
       prev: '‹ Назад',
