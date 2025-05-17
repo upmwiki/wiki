@@ -35,7 +35,7 @@ export default defineConfig({
 
     editLink: {
       pattern: 'https://github.com/upmwiki/wiki/edit/main/pages/:path',
-      text: 'Редактировать на GitHub'
+      text: 'Исходный код на GitHub'
     },
 
     docFooter: {
