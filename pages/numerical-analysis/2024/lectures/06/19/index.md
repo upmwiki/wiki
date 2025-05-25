@@ -55,3 +55,32 @@ $$
    $$
    {1 \over 2\pi} \int_{-\pi/h}^{\pi/h} c(\beta) e^{i\beta x_k} ~ \text{d}\beta =
    $$
+
+   $$
+   = {1 \over 2\pi} \int_{-\pi/h}^{\pi/h} \sum_{x_j \in X} f(x_j) e^{-i \beta x_j} \cdot h \cdot e^{i\beta x_k} ~ \text{d}\beta =
+   $$
+
+   $$
+   = {h \over 2\pi} \sum_{x_j \in X} f(x_j) \int_{-\pi/h}^{\pi/h} e^{i\beta (x_k - x_j)} ~ \text{d}\beta = (∗)
+   $$
+
+   $$
+   \int_{-\pi/h}^{\pi/h} e^{i\beta(x_k - x_j)} ~ \text{d}\beta =
+   $$
+
+   $$
+   = \begin{cases}
+   2\pi h, ~ ~ ~ ~ k = j \\
+   \left.{ e^{i\beta(x_k-x_j)} \over i(x_k - x_j) }\right|_{-\pi/h}^{\pi/h} = {e^{i\pi(k-j)} - e^{-i\pi(k-j)} \over ih(k-j)} = {2 \sin(k-j) \pi \over h(k-j)} = 0, ~ ~ ~ ~ k \ne j
+   \end{cases}
+   $$
+
+   $$
+   (∗) = {h \over 2\pi} f(x_k) \cdot {2 \pi h \over h} = f(x_k) \implies
+   $$
+
+   $$
+   \implies {1 \over 2\pi} \int_{-\pi/h}^{\pi/h} c(\beta) e^{i\beta x_k} ~ \text{d}\beta
+   $$
+
+   — обратное преобразование.

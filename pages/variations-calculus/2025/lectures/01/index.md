@@ -275,7 +275,7 @@ $$
 \text{d} x_{n-r+1} = f_1 (\text{d}x_1, \text{d}x_2 ,..., \text{d}x_{n-r}), \\
 \text{d} x_{n-r+2} = f_2 (\text{d}x_1, \text{d}x_2 ,..., \text{d}x_{n-r}), \\
 \cdots \\
-\text{d} x_{n-r} = f_r (\text{d}x_1, \text{d}x_2 ,..., \text{d}x_{n-r}).
+\text{d} x_{n} = f_r (\text{d}x_1, \text{d}x_2 ,..., \text{d}x_{n-r}).
 \end{cases}
 \tag{6}
 $$
