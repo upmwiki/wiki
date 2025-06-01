@@ -47,7 +47,7 @@ $\forall X^{(1)}, X^{(2)} \in D$ и $\forall \alpha \in [0; 1]$.
 
 1. Если $f(X)$ выпуклая, то $-f(X)$ — вогнутая.
 
-2. Функции $f(x) = aX + b$ являеюся всюду выпуклыми и всюду вогнутыми; $a,b = \text{const}$.
+2. Функции $f(X) = aX + b$ являюся всюду выпуклыми и всюду вогнутыми; $a,b = \text{const}$.
 
 3. Если функции $f_i(X)$, $i = \overline{1,m}$ выпуклы, то их сумма $\sum\limits_{i=1}^m \alpha_i f_i(X)$, $\forall i ~ \alpha_i \ge 0$ — также выпуклая функция.
 
@@ -81,7 +81,7 @@ $\forall X^{(1)}, X^{(2)} \in D$ и $\forall \alpha \in [0; 1]$.
    \text{d}^2f = \sum_{i=1}^n \sum_{j=1}^n f''_{x_i x_j} (X) \Delta x_i \Delta x_j \ge 0
    $$
 
-   для любых $X \in D4 и таких $\Delta x_i$ И $\Delta x_j$, что $\sum\limits_{i=1}^n \Delta x_i^2 \ne 0$.
+   для любых $X \in D$ и таких $\Delta x_i$ и $\Delta x_j$, что $\sum\limits_{i=1}^n \Delta x_i^2 \ne 0$.
 
 ::: info Замечание
 Выпуклость функции может быть определена с помощью *критерия Сильвестра:* функция выпукла тогда и только тогда, когда все угловые миноры матрицы Гессе нетрицательны:
@@ -89,7 +89,7 @@ $\forall X^{(1)}, X^{(2)} \in D$ и $\forall \alpha \in [0; 1]$.
 $$
 \Delta_k =
 \begin{vmatrix}
-g_{11} & \cdots & g_{ik} \\
+g_{11} & \cdots & g_{1k} \\
 \vdots & \ddots & \vdots \\
 g_{k1} & \cdots & g_{kk}
 \end{vmatrix}
