@@ -40,7 +40,7 @@ $$
 $$
 \begin{cases}
 \sum\limits_{i=1}^m x_{ij} = b_j, & j = \overline{1,n}, \\
-\sum\limits_{j=1}^m x_{ij} = a_i, & i = \overline{1,m}, \\
+\sum\limits_{j=1}^n x_{ij} = a_i, & i = \overline{1,m}, \\
 x_{ij} \ge 0 & \forall i, j.
 \end{cases}
 $$
