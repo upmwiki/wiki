@@ -38,9 +38,9 @@ features:
 #    icon: 🔎
 #    details: Скоро
 #    #link: /calculus
-  #- title: Комплексный анализ
-    #icon: 𝒊
-    #link: /complex-analysis
+  - title: Комплексный анализ
+    icon: 𝒊
+    link: /complex-analysis
   - title: Методы оптимизации
     icon: <img src="/icons/stopwatch.png" width="32" />
     link: /optimization-methods

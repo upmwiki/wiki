@@ -33,7 +33,7 @@ $$
 
 [image]
 
-Если $f(\bar{x}, \bar{y})$ — непрерывная функция, множества $X$ и $Y$ ограниченные, замкнутые и выпуктые, а также $f(\bar{x}, \bar{y})$ выпукла относительно $\bar{y}$ для каждого $\bar{x}$ и вогнута относительно $\bar{x}$ для каждого $\bar{y}$, то
+Если $f(\bar{x}, \bar{y})$ — непрерывная функция, множества $X$ и $Y$ ограниченные, замкнутые и выпуклые, а также $f(\bar{x}, \bar{y})$ выпукла относительно $\bar{y}$ для каждого $\bar{x}$ и вогнута относительно $\bar{x}$ для каждого $\bar{y}$, то
 
 $$
 \min_{y \in Y} \max_{x \in X} f(\bar{x}, \bar{y}) =
@@ -112,7 +112,7 @@ $$
 
 2. $$
    {\partial L(\bar{x}^{(0)}, \bar{\lambda}^{(0)}) \over \partial \lambda_i} \ge 0, ~ ~ ~ ~
-   \lambda_i^{(0)} {\partial L(\bar{x}^{(0)}, \bar{\lambda}^{(0)}) \over \partial \lambda_i} = 0, ~ ~ ~ ~ x_j^{(0)} \ge 0, ~ ~ i = \overline{1,m}
+   \lambda_i^{(0)} {\partial L(\bar{x}^{(0)}, \bar{\lambda}^{(0)}) \over \partial \lambda_i} = 0, ~ ~ ~ ~ \lambda_i^{(0)} \ge 0, ~ ~ i = \overline{1,m}
    $$
 :::
 
