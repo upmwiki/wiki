@@ -48,6 +48,9 @@ features:
     icon: <img src="/icons/package.png" width="32" />
 #    details: Скоро
     link: /oop
+  - title: Проектная деятельность
+    link: /project-activity
+    icon: <img src="/icons/ledger.png" width="32" />
   #- title: Теория вероятностей и математическая статистика
   #  icon: 🎲
   #  link: /probability-theory
