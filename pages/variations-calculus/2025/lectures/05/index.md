@@ -104,20 +104,37 @@ $$
 \dot{x} L_\dot{x} - L = \text{const}
 $$
 
-::: info Доказательство
-...
+::: details Доказательство
+$$
+{\text{d} \over \text{d}t} \left(
+    \dot{x} L_{\dot{x}} - L
+\right) = \ddot{x} L_{\dot{x}} + \dot{x} ~ {\text{d} \over \text{d}t} L_{\dot{x}} - {\text{d} \over \text{d}t} L =
+$$
+
+$$
+= \ddot{x} L_{\dot{x}} + \dot{x} ~ {\text{d} \over \text{d}t} L_{\dot{x}} - L_x \dot{x} - L_{\dot{x}} \ddot{x} =
+$$
+
+$$
+= \dot{x} ~ {\text{d} \over \text{d}t} L_{\dot{x}} - L_x \dot{x}
+= \dot{x} \underbrace{\left(
+    {\text{d} \over \text{d}t} L_{\dot{x}} = L_x
+\right)}_{=0} = \dot{x} \cdot 0 = 0. ~ ~ \blacksquare
+$$
 :::
 
 ::: info Задача (о наименьшей поверхности вращения)
 Определить кривую $y = y(x)$, проходящую через точки $A(a, a_1)$ и $B(b, b_1)$, от вращения которой вокруг оси $Ox$ получается поверхность минимальной площади.
 
-[image]
+<figure>
+    <img width="75%" src="/media/images/photo_2025-06-14_21-05-54.jpg" />
+</figure>
 
 Формализуем:
 
 $$
 \begin{cases}
-S = 2\pi \int_a^b y(x) \sqrt{1 + (y'(x))^2} ~ \text{d}x \to \min \\
+\displaystyle S = 2\pi \int_a^b y(x) \sqrt{1 + (y'(x))^2} ~ \text{d}x \to \min \\
 y(a) = a_1; ~ y(b) = b_1.
 \end{cases}
 $$
@@ -205,5 +222,28 @@ $$
 
 ## Задача о брахистохроне
 
-*(Дорешаем.)*
+Дорешаем задачу о брахистохроне.
 
+Формализация:
+
+$$
+\begin{cases}
+\displaystyle J(x) = {1 \over \sqrt{2g}} \int_0^{x_1} { \sqrt{1 + \dot{y}^2} \over \sqrt{y} } ~ \text{d}x \to \min \\
+y(0) = 0, ~ ~ y(x_1) = y_1.
+\end{cases}
+$$
+
+$$
+\dot{y} L_{\dot{y}} - L = C_1;
+$$
+
+$$
+L_{\dot{y}} = {\dot{y} \over \sqrt{1 + \dot{y}^2} \sqrt{y}};
+$$
+
+$$
+{\dot{y}^2 \over \sqrt{1 + \dot{y}^2}\sqrt{y}} - {\sqrt{1 + \dot{y}^2} \over \sqrt{y}} = C_1;
+$$
+
+$$
+$$

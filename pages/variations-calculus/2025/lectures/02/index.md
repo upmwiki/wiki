@@ -187,3 +187,91 @@ $$
 
 то $M_1 \in \text{abs min}$.
 :::
+
+<br />
+
+---
+
+<br />
+
+Ранее мы решали задачу $(2a)$. Теперь решим задачу $(2)$:
+
+$$
+\begin{cases}
+4xy \to \max \\
+x^2 + y^2 = r^2 \\
+x \ge 0, ~ y \ge 0
+\end{cases}
+$$
+
+Переформулируем данную задачу (перейдём от максимума к минимуму):
+
+$$
+\begin{cases}
+-4xy \to \min \\
+x^2 + y^2 = r^2 \\
+-x \le 0, ~ -y \le 0
+\end{cases}
+$$
+
+Составим лагранжиан:
+
+$$
+L = -4xy + \lambda_1 (x^2 + y^2 - r^2) - \lambda_2 x - \lambda_3 y.
+$$
+
+Необходимое условие существования минимума:
+
+$$
+\begin{cases}
+L'_x = -4y + 2 \lambda_1 x - \lambda_2 = 0 \\
+L'_y = -4x + 2 \lambda_1 y - \lambda_3 = 0 \\
+\lambda_2 \ge 0, ~ \lambda_2 x = 0 \\
+\lambda_3 \ge 0, ~ \lambda_3 y = 0
+\end{cases}
+$$
+
+Переберём четыре случая:
+
+1. Пусть $\lambda_2 = 0$, $\lambda_3 = 0$. Данный случай сводится к задаче $(2a)$. Таким образом,
+
+   $$
+   x = y = {r \over \sqrt{2}}; ~ ~ ~ ~ \lambda_1 = 2.
+   $$
+
+2. Пусть $\lambda_2 = 0$, $y = 0$. Тогда
+
+   $$
+   \begin{cases}
+   \lambda_1 x = 0 \\
+   -4x - \lambda_3 = 0
+   \end{cases} \implies
+
+   \underbrace{\lambda_3}_{\ge 0} = -\underbrace{4x}_{\ge 0} \implies
+   $$
+
+   $$
+   \implies \lambda_3 = x = 0 \implies y = r.
+   $$
+
+   Получили противоречие.
+
+   $$
+   S_\max = 2r^2
+   $$
+
+3. Пусть $\lambda_3 = 0$, $x = 0$. Тогда
+
+   $$
+   \begin{cases}
+   2 \lambda_1 y = 0 \\
+   -4y - \lambda_2 = 0
+   \end{cases} \implies
+   \lambda_2 = -4y,
+   $$
+
+   но $\lambda_2 \ge 0$, $y \ge 0$, следовательно, $\lambda_2 = y = 0$. Получили противоречие.
+
+4. Случай $x = 0$, $y = 0$ не годится.
+
+Таким образом, решение находится только в случае 1.
