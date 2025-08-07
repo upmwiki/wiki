@@ -51,9 +51,9 @@ features:
   - title: Проектная деятельность
     link: /project-activity
     icon: <img src="/icons/ledger.png" width="32" />
-  #- title: Теория вероятностей и математическая статистика
-  #  icon: 🎲
-  #  link: /probability-theory
+  - title: Теория вероятностей и математическая статистика
+    icon: 🎲
+    link: /probability-theory
   - title: Теория игр и исследование операций
     icon: <img src="/icons/chess-pawn.png" width="32" />
     #details: Скоро
