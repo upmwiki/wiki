@@ -38,6 +38,9 @@ features:
 #    icon: 🔎
 #    details: Скоро
 #    #link: /calculus
+  - title: История транспорта
+    icon: <img src="/icons/locomotive.png" width="32" />
+    link: /transport-history
   - title: Комплексный анализ
     icon: 𝒊
     link: /complex-analysis

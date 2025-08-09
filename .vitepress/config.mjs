@@ -10,6 +10,7 @@ import sidebarGameTheoryLabs2024 from '../sidebars/game-theory-2024-lectures.jso
 import optimizationMethodsLectures2025 from '../sidebars/optimization-methods-lectures-2025.json';
 import variationsCalculus2025 from '../sidebars/2025-variations-calculus.json';
 import sidebarProbabilityTheory2023 from '../sidebars/probability-theory-2023.json';
+import sidebarProjectActivity2022 from '../sidebars/2022-project-activity.json';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -108,6 +109,11 @@ export default defineConfig({
       '/probability-theory/2023': {
         base: '/probability-theory/2023',
         items: sidebarProbabilityTheory2023
+      },
+      // проектная деятельность
+      '/project-activity/2022': {
+        base: '/project-activity/2022',
+        items: sidebarProjectActivity2022
       },
     },
 
