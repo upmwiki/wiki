@@ -9,6 +9,7 @@ import sidebarOOPLabs2024 from '../sidebars/oop-labs-2024.json';
 import sidebarGameTheoryLabs2024 from '../sidebars/game-theory-2024-lectures.json';
 import optimizationMethodsLectures2025 from '../sidebars/optimization-methods-lectures-2025.json';
 import variationsCalculus2025 from '../sidebars/2025-variations-calculus.json';
+import sidebarProbabilityTheory2023 from '../sidebars/probability-theory-2023.json';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -65,10 +66,6 @@ export default defineConfig({
 
     sidebar: {
       // численные методы
-      '/numerical-analysis/lectures/2024': {
-        base: '/numerical-analysis/lectures/2024',
-        items: sidebarNumericalAnalysisLectures2024
-      },
       '/numerical-analysis/2024': {
         base: '/numerical-analysis/2024',
         items: sidebarNumericalAnalysis2024
@@ -106,6 +103,11 @@ export default defineConfig({
       '/variations-calculus/2025': {
         base: '/variations-calculus/2025',
         items: variationsCalculus2025
+      },
+      // теория вероятностей и математическая статистика
+      '/probability-theory/2023': {
+        base: '/probability-theory/2023',
+        items: sidebarProbabilityTheory2023
       },
     },
 
