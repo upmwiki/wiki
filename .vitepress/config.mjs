@@ -11,6 +11,7 @@ import optimizationMethodsLectures2025 from '../sidebars/optimization-methods-le
 import variationsCalculus2025 from '../sidebars/2025-variations-calculus.json';
 import sidebarProbabilityTheory2023 from '../sidebars/probability-theory-2023.json';
 import sidebarProjectActivity2022 from '../sidebars/2022-project-activity.json';
+import timetableSidebar from '../sidebars/timetable.json';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -58,7 +59,9 @@ export default defineConfig({
 
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: '<img src="/icons/open-book.png" width="16" style="display: inline; transform: translateY(1px);" /> Библиотека', link: '/library' },
+      { text: 'Расписание занятий', link: '/timetable/2025-02/' },
+      //{ text: '<img src="/icons/open-book.png" width="16" style="display: inline; transform: translateY(1px);" /> Библиотека', link: '/library' },
+      { text: 'Библиотека', link: '/library' },
       //{ text: '<img src="/icons/bell.png" width="16" title="Список изменений" />', link: '/updates' },
       //{ text: 'Home', link: '/' },
       //{ text: 'Examples', link: '/markdown-examples' },
@@ -115,6 +118,11 @@ export default defineConfig({
         base: '/project-activity/2022',
         items: sidebarProjectActivity2022
       },
+      // расписание занятий
+      '/timetable': {
+        base: '/timetable',
+        items: timetableSidebar
+      }
     },
 
     /*socialLinks: [

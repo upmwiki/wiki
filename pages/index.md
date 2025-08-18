@@ -8,9 +8,12 @@ hero:
   #text: "A VitePress Site"
   #tagline: Архив конспектов
   actions:
-#     - theme: alt
-#       text: О направлении
-#       link: /about-fos
+      #- theme: alt
+      #  text: Расписание занятий
+      #  link: ./timetable/2025-02/
+      #- theme: alt
+      #  text: О направлении
+      #  link: /course
 #     - theme: alt
 #       text: Калькуляторы
 #       link: /calculators
@@ -77,7 +80,6 @@ features:
     link: /numerical-analysis
   - title: Элементы алгебры и теории чисел
     icon: <img src="/icons/input-numbers.png" width="32" />
-#    details: Скоро
     link: /number-theory
 #  - icon: ❔
 #    details: Скоро
