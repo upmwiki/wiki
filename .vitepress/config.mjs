@@ -20,6 +20,15 @@ export default defineConfig({
   description: "УПМ Вики",
   titleTemplate: ':title · УПМ Вики',
 
+  // https://stackoverflow.com/questions/75219687/vue-vite-reached-heap-limit-allocation-failed-javascript-heap-out-of-memory
+  /*vite: {
+    server: {
+      watch: {
+        followSymlinks: false,
+      }
+    }
+  },*/
+
   markdown: {
     math: true,
     lineNumbers: true,
@@ -60,8 +69,14 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Расписание занятий', link: '/timetable/2025-02/' },
-      //{ text: '<img src="/icons/open-book.png" width="16" style="display: inline; transform: translateY(1px);" /> Библиотека', link: '/library' },
-      { text: 'Библиотека', link: '/library' },
+      {
+        text: 'Архив',
+        items: [
+          { text: 'Решебники', link: '/answerbook/' },
+          { text: 'Библиотека', link: '/library/' },
+          //{ text: '<img src="/icons/open-book.png" width="16" style="display: inline; transform: translateY(1px);" /> Библиотека', link: '/library' },
+        ]
+      }
       //{ text: '<img src="/icons/bell.png" width="16" title="Список изменений" />', link: '/updates' },
       //{ text: 'Home', link: '/' },
       //{ text: 'Examples', link: '/markdown-examples' },

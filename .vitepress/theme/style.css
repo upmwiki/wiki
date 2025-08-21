@@ -230,3 +230,15 @@ figcaption {
 .VPHome .container .main .text {
   max-width: 90%;
 }
+
+.taskslist {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .25rem;
+  margin-top: 1rem;
+}
+
+.taskslist a {
+  text-decoration: none;
+  padding: .1rem .65rem;
+}
