@@ -17,11 +17,13 @@ next: false
 
 <div class="taskslist">
 <a class="VPBadge tip" href="./02/08">2.8</a>
-<!--<a class="VPBadge info" href="./02/09">2.9</a>
-<a class="VPBadge info" href="./02/10">2.10</a>
+<a class="VPBadge tip" href="./02/10">2.10</a>
+<!--
+<a class="VPBadge info" href="./02/09">2.9</a>
 <a class="VPBadge info" href="./02/11">2.11</a>
 <a class="VPBadge info" href="./02/12">2.12</a>
-<a class="VPBadge info" href="./02/13">2.13</a>-->
+<a class="VPBadge info" href="./02/13">2.13</a>
+-->
 </div>
 
 #### § 3. Элементы выпуклого анализа
@@ -32,6 +34,10 @@ next: false
 ## Глава II. Классическое вариационное исчисление
 
 #### § 5. Элементарные задачи классического вариационного исчисления
+
+<div class="taskslist">
+<a class="VPBadge tip" href="./05/31">5.31</a>
+</div>
 
 #### § 6. Изопериметрические задачи
 
