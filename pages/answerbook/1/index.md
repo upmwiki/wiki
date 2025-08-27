@@ -37,10 +37,10 @@ next: false
 
 <div class="taskslist">
 <a class="VPBadge tip" href="./05/11">5.11</a>
-<a class="VPBadge info" href="./05/26">5.26</a>
+<a class="VPBadge tip" href="./05/26">5.26</a>
 <a class="VPBadge info" href="./05/31">5.31</a>
 <a class="VPBadge info" href="./05/35">5.35</a>
-<a class="VPBadge info" href="./05/49">5.49</a>
+<a class="VPBadge tip" href="./05/49">5.49</a>
 <a class="VPBadge info" href="./05/50">5.50</a>
 </div>
 
