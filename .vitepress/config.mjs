@@ -65,6 +65,12 @@ export default defineConfig({
     sidebarMenuLabel: 'Меню',
     returnToTopLabel: 'Вернуться к началу',
     langMenuLabel: 'Изменить язык',
+    notFound: {
+      title: "СТРАНИЦА НЕ НАЙДЕНА",
+      quote: "Запрашиваемая страница либо не существует либо в настоящее время доступна по другому адресу",
+      linkText: "Вернуться на главную",
+      linkLabel: "Вернуться на главную страницу"
+    },
 
     // https://vitepress.dev/reference/default-theme-config
     nav: [

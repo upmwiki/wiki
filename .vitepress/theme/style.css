@@ -150,6 +150,10 @@
 }
 
 input {
+  font-family: inherit;
+}
+
+/*input {
   display: block;
   border: 1px solid var(--vp-c-divider);
   border-radius: 8px;
@@ -160,7 +164,7 @@ input {
 }
 input:is(:hover, :active) {
   border-color: var(--vp-c-brand-1);
-}
+}*/
 
 .content-body {
   background-color: color-mix(in srgb, var(--vp-nav-bg-color), transparent 25%) !important;
