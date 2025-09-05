@@ -54,6 +54,10 @@ features:
     icon: <img src="/icons/package.png" width="32" />
 #    details: Скоро
     link: /oop
+  - title: Основы актуарной математики
+    icon: <img src="/icons/actuarial.png" width="32" />
+    link: /actuarial
+    details: Новое
   - title: Проектная деятельность
     link: /project-activity
     icon: <img src="/icons/ledger.png" width="32" />
@@ -74,8 +78,8 @@ features:
   - title: Функциональный анализ
     icon: <img src="/icons/infinity.png" width="32" />
     link: /functional-analysis
-  - title: Численные методы
-    #details: 
+  - title: Численные методы + Системы компьютерной математики
+    details: Новое
     icon: <img src="/icons/abacus.png" width="32" />
     link: /numerical-analysis
   - title: Элементы алгебры и теории чисел

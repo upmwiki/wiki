@@ -37,6 +37,7 @@ next: false
 
 <div class="taskslist">
 <a class="VPBadge warning" href="./05/02">5.2</a>
+<a class="VPBadge warning" href="./05/04">5.4</a>
 <a class="VPBadge tip" href="./05/11">5.11</a>
 <a class="VPBadge tip" href="./05/26">5.26</a>
 <a class="VPBadge warning" href="./05/28">5.28</a>
