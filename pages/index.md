@@ -47,6 +47,10 @@ features:
   - title: Комплексный анализ
     icon: 𝒊
     link: /complex-analysis
+  - title: Математические модели в экономике
+    details: Новое
+    icon: <img src="/icons/bar-chart.png" width="32" />
+    link: /mmeconomics
   - title: Методы оптимизации
     icon: <img src="/icons/stopwatch.png" width="32" />
     link: /optimization-methods
