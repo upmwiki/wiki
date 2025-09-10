@@ -12,7 +12,9 @@ next: false
 *Расписание действует с 01.09.2025 по 04.01.2026*
 
 * [УПМ-411](/media/timetable/Расписание-занятий-группы-189146.pdf) <Badge type="info">pdf</Badge>
+* [УПМ-411 (обновлено)](/media/timetable/Расписание-занятий-группы-189146-2.pdf) <Badge type="info">pdf</Badge>
 * [УПМ-412](/media/timetable/Расписание-занятий-группы-189143.pdf) <Badge type="info">pdf</Badge>
+* [УПМ-412 (обновлено)](/media/timetable/Расписание-занятий-группы-189143-2.pdf) <Badge type="info">pdf</Badge>
 
 ## 3 курс
 
