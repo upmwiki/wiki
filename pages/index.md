@@ -21,7 +21,6 @@ hero:
 features:
   - title: Алгебра и аналитическая геометрия
     icon: 📏
-#    details: Скоро
     link: /algebra
 #  - title: Архитектура и программное обеспечение вычислительных сисем
 #    icon: 💻
@@ -33,6 +32,7 @@ features:
   - title: Вариационное исчисление и оптимальное управление
     icon: <img src="/icons/chart-increasing.png" width="32" />
     link: /variations-calculus
+    details: Новое
 #  - title: Дифференциальные уравнения
 #    icon: 𝑑𝑥
 #    details: Скоро
@@ -47,6 +47,10 @@ features:
   - title: Комплексный анализ
     icon: 𝒊
     link: /complex-analysis
+  - title: Компьютерная графика
+    icon: <img src="/icons/palette.png" width="32" />
+    link: /computer-graphics
+    details: Новое
   - title: Математические модели в экономике
     details: Новое
     icon: <img src="/icons/bar-chart.png" width="32" />

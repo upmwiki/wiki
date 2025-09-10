@@ -6,6 +6,7 @@
   },
   "dependencies": {
     "@primevue/themes": "^4.2.2",
+    "@vercel/analytics": "^1.5.0",
     "markdown-it": "^14.1.0",
     "markdown-it-mathjax3": "^4.3.2",
     "vitepress": "^1.5.0"

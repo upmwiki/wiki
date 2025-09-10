@@ -89,6 +89,15 @@ export default defineConfig({
       //{ text: "Калькуляторы", link: "/calculators" },
     ],
 
+    footer: {
+      message: `<small>
+        Проблемы с доступом к сайту? Попробуйте альтернативы:&nbsp;
+        <a href="https://upmwiki.netlify.app/">Netlify</a> ·
+        <a href="https://upmwiki.vercel.app/">Vercel</a>
+        </small>
+      `
+    },
+
     sidebar: {
       // численные методы
       '/numerical-analysis/2024': {
