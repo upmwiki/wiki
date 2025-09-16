@@ -29,8 +29,10 @@ export default defineConfig({
     }
   },*/
 
-  build: {
-    chunkSizeWarningLimit: 1600
+  vite: {
+    build: {
+      chunkSizeWarningLimit: 1600
+    },
   },
 
   markdown: {
