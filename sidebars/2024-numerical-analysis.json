@@ -113,7 +113,9 @@
         "collapsed": true,
         "link": "/lectures/09/intro/",
         "items": [
-            { "text": "§ 50. Метод Эйлера", "link": "/lectures/09/01/" }
+            { "text": "§ 50. Метод Эйлера", "link": "/lectures/09/01/" },
+            { "text": "§ 51. Методы Рунге-Кутта", "link": "/lectures/09/02/" },
+            { "text": "§ 52. Пошаговый контроль точности методов Рунге-Кутта", "link": "/lectures/09/03/" }
         ]
     }
 ]
