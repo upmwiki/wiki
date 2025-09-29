@@ -254,3 +254,7 @@ figcaption {
   text-decoration: none;
   padding: .1rem .65rem;
 }
+
+.mermaid .nodeLabel * {
+  line-height: 1.5;
+}

@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import { withMermaid } from "vitepress-plugin-mermaid";
 
 import sidebarNumericalAnalysisLectures2024 from '../sidebars/numerical-analysis-lectures-2024.json';
 import sidebarNumericalAnalysis2024 from '../sidebars/2024-numerical-analysis.json';
@@ -14,38 +15,47 @@ import sidebarProjectActivity2022 from '../sidebars/2022-project-activity.json';
 import timetableSidebar from '../sidebars/timetable.json';
 
 // https://vitepress.dev/reference/site-config
-export default defineConfig({
-  title: "УПМ Вики",
-  //description: "A VitePress Site",
-  description: "УПМ Вики",
-  titleTemplate: ':title · УПМ Вики',
+export default withMermaid(
+  defineConfig({
+    title: "УПМ Вики",
+    description: "УПМ Вики",
+    titleTemplate: ':title · УПМ Вики',
 
-  // https://stackoverflow.com/questions/75219687/vue-vite-reached-heap-limit-allocation-failed-javascript-heap-out-of-memory
-  /*vite: {
-    server: {
-      watch: {
-        followSymlinks: false,
-      }
-    }
-  },*/
-
-  vite: {
-    build: {
-      chunkSizeWarningLimit: 1600
+    vite: {
+      build: {
+        chunkSizeWarningLimit: 1600
+      },
     },
-  },
 
-  markdown: {
-    math: true,
-    lineNumbers: true,
-  },
-  lastUpdated: true,
-  appearance: 'dark',
-  srcDir: 'pages',
-  lang: 'ru-RU',
-  cleanUrls: true,
+    mermaidPlugin: {
+      class: "mermaid"
+    },
 
-  themeConfig: {
+    markdown: {
+      math: true,
+      lineNumbers: true,
+    },
+    lastUpdated: true,
+    appearance: 'dark',
+    srcDir: 'pages',
+    lang: 'ru-RU',
+    cleanUrls: true,
+
+    themeConfig: themeConfig()
+  })
+)
+
+// https://stackoverflow.com/questions/75219687/vue-vite-reached-heap-limit-allocation-failed-javascript-heap-out-of-memory
+/*vite: {
+  server: {
+    watch: {
+      followSymlinks: false,
+    }
+  }
+},*/
+
+function themeConfig() {
+  return {
     search: {
       provider: 'local'
     },
@@ -104,7 +114,24 @@ export default defineConfig({
       `
     },
 
-    sidebar: {
+    sidebar: sidebar(),
+
+    /*socialLinks: [
+      { icon: 'github', link: 'https://github.com/upmwiki/wiki' }
+    ],*/
+
+    head: [
+      ['link', { rel: 'icon', href: '/favicon.ico' }],
+      ['meta', { name: 'robots', content: 'noindex, nofollow' }],
+    ],
+
+    logo: { src: '/logo.png', },
+    //siteTitle: false,
+  }
+}
+
+function sidebar() {
+  return {
       // численные методы
       '/numerical-analysis/2024': {
         base: '/numerical-analysis/2024',
@@ -159,21 +186,5 @@ export default defineConfig({
         base: '/timetable',
         items: timetableSidebar
       }
-    },
-
-    /*socialLinks: [
-      { icon: 'github', link: 'https://github.com/upmwiki/wiki' }
-    ],*/
-
-    head: [
-      ['link', { rel: 'icon', href: '/favicon.ico' }],
-      ['meta', { name: 'robots', content: 'noindex, nofollow' }],
-    ],
-
-    logo: { src: '/logo.png', },
-    //siteTitle: false,
-  },
-  sitemap: {
-    hostname: "https://upmwiki.netlify.app/"
-  }
-})
+    }
+}
