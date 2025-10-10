@@ -195,7 +195,9 @@ p.subtext,
   color: var(--vp-c-text-2);
   font-size: .75rem;
   padding: 0;
-  margin: -.15rem 0 -.25rem 0;
+  /* margin: -.15rem 0 -.25rem 0; */
+  margin: .1rem 0 -.25rem 0;
+  line-height: 1.6;
 }
 
 p.footnotetext {
@@ -257,4 +259,12 @@ figcaption {
 
 .mermaid .nodeLabel * {
   line-height: 1.5;
+}
+
+figure img {
+  border-radius: .3rem;
+}
+
+.spaced {
+  letter-spacing: 2px;
 }
