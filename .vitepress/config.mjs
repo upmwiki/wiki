@@ -96,6 +96,7 @@ function themeConfig() {
         items: [
           { text: 'Решебники', link: '/answerbook/' },
           { text: 'Библиотека', link: '/library/' },
+          { text: 'Шпаргалки', link: '/cheatsheet/' },
           //{ text: '<img src="/icons/open-book.png" width="16" style="display: inline; transform: translateY(1px);" /> Библиотека', link: '/library' },
         ]
       }
